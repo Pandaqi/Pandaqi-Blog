@@ -1,0 +1,3 @@
+{{ $src := .Destination }}
+{{ $alt := .Text }}
+{{ partial "show-image.html" (dict "context" . "src" $src "alt" $alt) }}

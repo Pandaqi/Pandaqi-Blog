@@ -1,0 +1,9 @@
+{{- $parent_section := .Page.Parent -}}
+{{- $pages := $parent_section.RegularPages.Reverse -}}
+{{- $first_page := index (first 1 $pages) 0 -}}
+
+<aside class="multipart-message masked-link-block">
+    <span class="label">Multipart Message ||</span><p>This article is part of a multipart series! <a href="{{ $first_page.RelPermalink }}">Click here to read the first article.</a> Scroll to the bottom to visit the next/previous entries.</p>
+</aside>
+
+

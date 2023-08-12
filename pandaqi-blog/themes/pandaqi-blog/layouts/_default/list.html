@@ -1,0 +1,37 @@
+{{ define "main" }}
+	<main class="padding">
+		<div class="center-block">
+			{{ partial "header-with-emoji" . }}
+
+			<aside class="metadata">
+				{{ partial "breadcrumbs.html" . }}
+			</aside>
+
+			<div class="introduction-content">
+				{{ .Content }}
+			</div>
+		</div>
+
+		<!-- NOTE: Either use .Paginator.Pages, or .Paginate (<some selector>) -->
+		<!-- The spelling is different, as it's a completely different way of paginating -->
+		<!-- NOTE: Don't use multiple .Paginate calls -->
+		{{ $page_select := (where .Pages "Section" .Section)}}
+		{{ if .Page.Params.multipart }}
+			{{ $page_select = (where .Pages.Reverse "Section" .Section) }}
+		{{ end }}
+
+		{{ $pages := slice }}
+		{{ $is_taxonomy := .Data.Plural }}
+
+		{{ if $is_taxonomy }}
+			{{ $pages = .Paginator.Pages }}
+		{{ else }}
+			{{ $paginator := .Paginate $page_select }}
+			{{ $pages = $paginator.Pages }}
+		{{ end }}
+
+		{{ partial "summary-container" (dict "context" . "pages" $pages) }}
+
+		{{ partial "pagination.html" (dict "context" . "type" "list") }}
+	</main>
+{{ end }}

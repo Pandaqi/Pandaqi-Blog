@@ -1,7 +1,7 @@
 baseURL = 'https://pandaqi.com/blog/'
 languageCode = 'en-US'
 title = 'Pandaqi Blog'
-theme = 'pq-blog'
+theme = 'pandaqi-blog'
 paginate        = 6
 summaryLength 	= 18
 

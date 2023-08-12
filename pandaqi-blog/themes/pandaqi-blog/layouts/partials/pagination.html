@@ -1,0 +1,55 @@
+{{ $type := .type }}
+{{ $has_prev := "" }}
+{{ $has_next := "" }}
+{{ $prev_url := "" }}
+{{ $next_url := "" }}
+
+{{ $middle_message := "" }}
+
+
+{{ if eq $type "series" }}
+	{{ $has_prev = .context.PrevInSection }}
+	{{ $has_next = .context.NextInSection }}
+
+	{{ if $has_prev }}{{ $prev_url = .context.PrevInSection.RelPermalink }}{{ end }}
+	{{ if $has_next}}{{ $next_url = .context.NextInSection.RelPermalink }}{{ end }}
+
+	{{ $middle_message = "Continue reading" }}
+{{ else if eq $type "list" }}
+	{{ $has_prev = .context.Paginator.HasPrev }}
+	{{ $has_next = .context.Paginator.HasNext }}
+
+	{{ if $has_prev }}{{ $prev_url = .context.Paginator.Prev.URL }}{{ end }}
+	{{ if $has_next}}{{ $next_url = .context.Paginator.Next.URL }}{{ end }}
+
+	{{ $middle_message = printf "%d of %d" .context.Paginator.PageNumber .context.Paginator.TotalPages }}
+{{ end }}
+
+<div>
+	<nav class="pagination">
+		<ul>
+		{{ if $has_prev }}
+			<li>
+				{{ partial "button.html" (dict "href" $prev_url "content" "<< Previous Page") }}
+			</li>
+		{{ else }}
+			<li>
+				<span class="nav-disabled">No previous page :(</span>
+			</li>
+		{{ end }}
+		
+		<li>{{ $middle_message }}</li>
+		
+		{{ if $has_next }}
+			<li>
+				{{ partial "button.html" (dict "href" $next_url "content" ">> Next Page") }}
+			</li>
+		{{ else }}
+			<li>
+				<span class="nav-disabled">No next page :(</span>
+			</li>
+		{{ end }}
+		
+		</ul>
+	</nav>
+</div>

@@ -1,0 +1,12 @@
+{{ $url := .Get "src" }}
+
+<figure>
+    <video width=100% controls>
+        <source src="{{ $url }}" type="video/webm">
+        Your browser does not support the video tag.  
+    </video>
+    <figcaption>
+        {{ .Inner }}
+    </figcaption>
+</figure>
+

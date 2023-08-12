@@ -1,0 +1,13 @@
+{{ $display_toc := (gt .WordCount 100) }}
+{{ if isset .Params "toc" }}
+    {{ $display_toc = and $display_toc .Params.toc }}
+{{ end }}
+
+{{ if $display_toc }}
+<aside id="table-of-contents" class="masked-link-block">
+    <header>
+        <h2>Table of Contents</h2>
+    </header>
+    {{.TableOfContents}}
+</aside>
+{{ end }}

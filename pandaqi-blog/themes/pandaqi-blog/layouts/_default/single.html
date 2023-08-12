@@ -1,0 +1,25 @@
+{{ define "main" }}
+	<main class="padding center-block">
+		<article class="single-article">
+			{{ partial "thumbnail.html" (dict "context" . "external" false) }}
+
+			<h1>{{ .Title }}</h1>
+			
+			<aside class="metadata">
+				{{ partial "breadcrumbs.html" . }}
+				{{ partial "date.html" . }}
+				{{ partial "tags.html" (dict "context" . "links" true) }}
+				{{ partial "tableofcontents-button.html" . }}
+			</aside>
+
+			{{ partial "tableofcontents.html" . }}
+			
+			<div>
+				{{ .Content }}
+			</div>
+
+		</article>
+
+		{{ partial "pagination.html" (dict "context" . "type" "series") }}
+	</main>
+{{ end }}

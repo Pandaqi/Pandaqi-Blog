@@ -1,0 +1,21 @@
+{{ $make_links := .links }}
+{{ $base_url := .context.Site.BaseURL }}
+
+{{ with .context.Params.tags }}
+<nav class="tags">
+    <span class="metadata-label"><span class="emoji">🎗</span> Tags ||</span>
+    <ul>
+        {{ range . }}
+        <li>
+            {{ if $make_links }}
+                {{ $url := printf "%stags/%s" $base_url (. | urlize) }}
+                {{ $tag_name := . }}
+                <a href="{{ $url }}">{{ $tag_name }}</a>
+            {{ else }}
+                <span class="nav-disabled">[{{ . }}]</span>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</nav>
+{{ end }}

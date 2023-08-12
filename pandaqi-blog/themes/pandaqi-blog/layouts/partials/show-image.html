@@ -1,0 +1,53 @@
+{{- $main_class := "inline-image" -}}
+{{- if eq .thumb true -}}
+	{{- $main_class = "thumb-image" -}}
+{{- end -}}
+
+<figure class="{{ $main_class }}">
+	{{- $rel_url := .src -}}
+	{{- if not (in .src ".") -}}
+		{{- $rel_url = printf "%s.webp" $rel_url -}}
+	{{- end -}}
+	{{- $full_url := printf "content%s%s" .context.Page.RelPermalink $rel_url -}}
+	{{- $alt_full_url := printf "content%s" $rel_url -}}
+	{{- $full_url = replace $full_url "/blog" "" -}}
+	{{- $alt_full_url = replace $alt_full_url "/blog" "" -}}
+	{{- $pure_alt := .alt -}}
+	{{- $class := or .class "" -}}
+
+	{{- if not (fileExists $full_url) -}}
+		{{- $full_url = $alt_full_url -}}
+	{{- end -}}
+	{{- $file_exists := fileExists $full_url -}}
+
+	<picture>
+		{{- $valid_format := or (in $full_url ".webp") (in $full_url ".png") -}}
+		{{- if $file_exists -}}
+			{{- $img := dict "Width" "" "Height" "" -}}
+			{{- if $valid_format -}}
+				{{- $img = imageConfig $full_url -}}
+			{{- end -}}			
+			{{- $alt := or $pure_alt ((replace .src ".webp" "") | humanize) -}}
+
+			<img 
+				src="{{- $rel_url -}}" 
+				loading="lazy" 
+				decoding="async" 
+				alt="{{- $alt | safeHTML -}}"
+				title="{{- $alt | safeHTML -}}"
+				width="{{- $img.Width -}}"
+				height="{{- $img.Height -}}"
+				class="{{- $class -}}"
+			/>
+		{{- else -}}
+			Cannot find image: {{- $full_url -}}
+			<!-- {{- $full_url = printf "img%s" (replace (replace .src "png" "webp") "media" "") -}} -->
+		{{- end -}}
+	</picture>
+	{{- $show_caption := and $pure_alt (ne .thumb true) -}}
+	{{- if $show_caption -}}
+		<figcaption class="side-note">
+			<span>{{- $pure_alt | safeHTML -}}</span>
+		</figcaption>
+	{{- end -}}
+</figure>

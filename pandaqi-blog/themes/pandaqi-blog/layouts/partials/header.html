@@ -1,0 +1,22 @@
+<header id="site-header">
+	{{ $home_url := .Site.BaseURL }}
+	
+	{{ with .Site.Menus.main }}
+	<nav class="menu">
+		<ul>
+			<li>
+				
+				{{ partial "button.html" (dict "context" . "href" $home_url "content" "Home" )}}
+			</li>
+
+			{{ range . }}
+			<li>
+				{{ $href := .URL | relURL }}
+				{{ $content := .Name }}
+				{{ partial "button.html" (dict "context" . "href" $href "content" $content) }}
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+	{{ end }}
+</header>

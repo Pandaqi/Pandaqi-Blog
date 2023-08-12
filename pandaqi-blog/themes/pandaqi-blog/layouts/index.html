@@ -1,0 +1,15 @@
+{{ define "main" }}
+	<main class="padding">
+		{{ $paginator := .Paginate .Site.RegularPages }}
+
+		<!-- Only display explanation/welcome message at first page -->
+		{{ if not $paginator.HasPrev }}
+			<div class="introduction-content center-block">
+				{{ .Content }}
+			</div>
+		{{ end }}
+		
+		{{ partial "summary-container" (dict "context" . "pages" $paginator.Pages) }}
+		{{ partial "pagination.html" (dict "context" . "type" "list") }}
+	</main>
+{{ end }}

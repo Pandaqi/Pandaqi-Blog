@@ -1,0 +1,14 @@
+{{ $style := "" }}
+{{ $columns := int (or (.Get "columns") "2") }}
+{{ $column_string := "" }}
+{{ range seq $columns }}
+    {{ $column_string = add $column_string "auto " }}
+{{ end }}
+
+{{ $style = add $style (printf "--num-cols:%s;" $column_string) }}
+
+<div class="image-gallery" style="{{ $style | safeCSS }}">
+{{ .Inner }}
+</div>
+
+

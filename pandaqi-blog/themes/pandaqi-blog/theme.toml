@@ -1,0 +1,9 @@
+name = "Pandaqi Blog"
+description = "A blog about game development and maybe more."
+homepage = "https://pandaqi.com/blog/"
+tags = ["blog", "game dev", "game", "tutorial", "game development"]
+features = ["blog"]
+
+[author]
+  name = "Pandaqi"
+  homepage = "https://pandaqi.com"

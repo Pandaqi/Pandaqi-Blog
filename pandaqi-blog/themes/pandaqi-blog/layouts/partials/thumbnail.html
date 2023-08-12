@@ -1,0 +1,12 @@
+{{ $original_context := .context }}
+{{ $link := .context.RelPermalink }}
+{{ $is_external := .external }}
+
+{{ with .context.Params.thumbnail_media }}
+    <div class="thumbnail-media">
+        {{ $img_url := . }}
+        {{ if $is_external }}{{ $img_url = printf "%s%s" $link . }}{{ end }}
+        {{ $alt := printf "Thumbnail / Header for article: %s" $original_context.Title }}
+        {{ partial "show-image.html" (dict "context" $original_context "src" $img_url "alt" $alt "thumb" true) }}
+    </div>
+{{ end }}

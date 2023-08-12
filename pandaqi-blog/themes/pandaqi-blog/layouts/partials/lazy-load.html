@@ -1,0 +1,11 @@
+{{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "transpiler" "dartsass") }}
+{{ $style := resources.Get "sass/style.scss" | resources.ToCSS $options }}
+
+{{ if not .Site.Params.testOnlyCriticalStyle }}
+	<link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}">
+{{ end }}
+
+{{ $fonts := resources.Get "js/fonts.js" }}
+{{ $main := resources.Get "js/main.js" }}
+{{ $js := slice $main $fonts | resources.Concat "js/bundle.js" | resources.Minify }}
+<script src="{{ $js.RelPermalink }}"></script>

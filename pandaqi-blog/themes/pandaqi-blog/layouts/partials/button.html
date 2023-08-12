@@ -1,0 +1,8 @@
+{{ $url := .href }}
+{{ $content := .content }}
+{{ $rand := index (seq 8 | shuffle) 0 }}
+{{ $rand_rotation := mul (sub (index (seq 8 | shuffle) 0) 4) 0.5 }}
+
+<a href="{{ $url }}" class="masked-link big-mask mask-{{ $rand }}" style="--rotation: {{ $rand_rotation }}deg">
+    {{ $content }}
+</a>

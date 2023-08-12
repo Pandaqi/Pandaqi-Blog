@@ -1,0 +1,61 @@
+<footer id="site-footer">
+	<div class="padding center-block">
+		<!-- Reminding people there's more, linking to it -->
+		<h3>More Pandaqi</h3>
+		<p>
+			You could <a href="https://pandaqi.com">visit the game studio</a>. 
+			Or my <a href="https://pandaqi.com/tutorials/">free tutorial website</a>.
+			Or my <a href="https://rodepanda.com/">portfolio</a> with easy access to absolutely everything I ever made.
+		</p>
+
+		<!-- Latest articles as simple list -->
+		<h3>Latest</h3>
+		<nav class="latest">
+			<ul>
+				{{ range .Site.RegularPages | first 10 }}
+				<li>
+					<a href="{{ .RelPermalink }}">
+						{{ .Title }}
+						{{ with .Params.emoji }}
+							({{ . }})
+						{{ end }}
+					</a>
+				</li>
+				{{ end }}
+			</ul>
+		</nav>
+
+
+		<!-- Sections (same as top menu, now as a simple list) -->
+		{{ $context := . }}
+		{{ with .Site.Menus.main }}
+			<h3>Sections</h3>
+			
+			<nav>
+				<ul>
+					{{ range . }}
+					<li>
+						{{ $href := .URL | relURL }}
+						{{ $content := .Name }}
+						{{ $page_url := replace (printf "%s_index.md" $href) "/blog/" "/" }}
+						{{ $page := $context.Site.GetPage $page_url }}
+						<a href="{{ $href }}">
+							{{ $content }}
+							({{ $page.Params.emoji }})
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+			</nav>
+		{{ end }}
+
+		<!-- Credits, colofon, copyright, however you call it -->
+		<h3>Credits</h3>
+		<p>
+			Theme by me (<a href="https://pandaqi.com">Pandaqi</a> 🐼) &middot;
+			with ❤️ &middot;
+			using <a href="https://gohugo.io">Hugo</a> &middot;
+			&copy; 2018&ndash;{{ now.Year }} Pandaqi Blog
+		</p>
+	</div>
+</footer>
