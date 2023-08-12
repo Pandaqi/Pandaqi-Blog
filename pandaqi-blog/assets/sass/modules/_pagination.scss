@@ -1,0 +1,24 @@
+@use "modules/globals" as g;
+
+/* Pagination */
+.pagination {
+    font-family: g.$header-font;
+    clear: both;
+    margin-top: 2.0em;
+
+    ul {
+        @include g.remove-standard-list-style();
+        @include g.center-flexbox();
+
+        gap: 1.0em;
+
+        .nav-disabled {
+            opacity: 0.5;
+        }
+
+        a.masked-link {
+            background-color: g.$summary-bg-color;
+            font-size: g.$def-font-size;
+        }
+    }
+}

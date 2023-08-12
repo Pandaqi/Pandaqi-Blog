@@ -1,0 +1,59 @@
+$breakpoint-small: 450px;
+$breakpoint-medium: 600px;
+$breakpoint-large: 960px;
+
+$dark-bg-color: #1c0115;
+$bg-color: #320A28;
+$summary-bg-color: #511730;
+$light-bg-color: #8E443D;
+
+$text-color: #DDD;
+$aside-font-size: 0.75em;
+
+$body-font: 'Raleway', Helvetica, sans-serif;
+$header-font: 'Dosis', Georgia, serif;
+
+$max-img-size: 500px;
+
+$def-width: 960px;
+$def-font-size: calc(15px + 0.390625vw);
+$def-padding: 20px;
+$def-text-decoration-thickness: 2px;
+$def-trans: 0.3s; // default time for transition parameter
+
+$num-masks: 8;
+
+@mixin wavy-underline() {
+    text-decoration-style: wavy;
+    text-decoration-thickness: $def-text-decoration-thickness;
+    text-decoration-line: underline;
+}
+
+@mixin straight-underline() {
+    text-decoration-style: solid;
+    text-decoration-thickness: $def-text-decoration-thickness;
+    text-decoration-line: underline;
+}
+
+@mixin no-underline() {
+    text-decoration: none;
+}
+
+@mixin remove-standard-list-style() {
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+    } 
+}
+
+@mixin center-flexbox() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}

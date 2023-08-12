@@ -1,0 +1,20 @@
+@use "modules/globals" as g;
+
+#site-footer {
+    background-color: g.$dark-bg-color;
+    color: #AAA;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #f7c5db;
+    }
+
+    a {
+        color: #8ac8e0;
+        @include g.straight-underline();
+
+        &:hover {
+            color: #ccecf9;
+            @include g.wavy-underline();
+        }
+    }
+}

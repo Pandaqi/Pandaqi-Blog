@@ -1,0 +1,22 @@
+@use "sass:color";
+@use "modules/globals" as g;
+
+#site-header {
+    background-color: g.$light-bg-color;
+    color: g.$text-color;
+    padding: g.$def-padding;
+
+    display: flex;
+    justify-content: center;
+
+    .menu {
+        ul {
+            @include g.remove-standard-list-style();
+
+            a.masked-link {
+                background-color: color.scale(g.$light-bg-color, $lightness: -30%);
+                color: color.scale(g.$text-color, $lightness: 40%);
+            }
+        } 
+    }
+}

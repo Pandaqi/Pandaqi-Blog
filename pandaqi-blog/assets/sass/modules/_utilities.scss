@@ -1,0 +1,70 @@
+@use "globals" as g;
+
+/* Utility Classes */
+.wrapper {
+    margin: 0 3rem;
+}
+
+blockquote {
+    border-left: 0.5em solid #eee;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.remark, .example, .multipart-message {
+    font-family: g.$header-font;
+    
+    .label {
+        opacity: 0.5;
+        display: inline;
+        margin-right: 1.0em;
+    }
+
+    .label + p {
+        display: inline;
+    }
+}
+
+.remark {
+    opacity: 0.8;
+    font-size: g.$aside-font-size;
+}
+
+.example {
+    background-color: #124936 !important;
+
+    code {
+        color: #fedc80;
+    }
+}
+
+.multipart-message {
+    background-color: #353886 !important;
+    padding: 0.25em !important;
+    padding-left: 1.0em !important;
+
+    a {
+        color: #b8baff;
+        &:hover { color: white; }
+    }
+}

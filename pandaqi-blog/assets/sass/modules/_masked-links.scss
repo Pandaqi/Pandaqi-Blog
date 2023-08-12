@@ -1,0 +1,68 @@
+@use "modules/globals" as g;
+
+@mixin icon($offset:0) {
+    mask-position-x: $offset;
+    -webkit-mask-position-x: $offset;
+}
+
+.masked-link {
+    display: inline-block;
+    font-size: 0.8em;
+    text-decoration: none;
+    
+    padding: 0px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    mask-image: url(../theme/metadata-masks.webp);
+    -webkit-mask-image: url(../theme/metadata-masks.webp);
+
+    mask-size: (g.$num-masks * 100 + 0%) 100%;
+    -webkit-mask-size: (g.$num-masks * 100 + 0%) 100%;
+
+    transition: background-color g.$def-trans, color g.$def-trans, transform g.$def-trans;
+
+    transform: rotate(var(--rotation));
+
+    &:hover {
+        filter:  drop-shadow(0 0 30px black) hue-rotate(-120deg);
+        transform: rotate(0deg) scale(1.1);
+    }
+
+    &.category-link, &.tag-link, &.big-mask {
+        padding: 20px;
+    }
+
+    
+    @for $i from 1 through g.$num-masks {
+        &.mask-#{$i} {
+            @include icon($i * 100 + 0%);
+        }
+    }
+}
+
+.masked-link-block {
+    padding: 1.0em;
+    padding-left: 2.0em;
+
+    background-color: g.$summary-bg-color;
+    filter: drop-shadow(0 0 10px #000);
+    transition: background-color g.$def-trans, transform g.$def-trans;
+
+    $mask-url: url(../theme/summary-mask-large.png);
+    mask-image: $mask_url;
+    -webkit-mask-image: $mask-url;
+
+    $mask-size: 100% 100%;
+    mask-size: $mask-size;
+    -webkit-mask-size: $mask-size;
+}
+
+button.masked-link {
+    border: none;
+    font-family: 'Raleway';
+
+    &:hover {
+        cursor: pointer;
+    }
+}

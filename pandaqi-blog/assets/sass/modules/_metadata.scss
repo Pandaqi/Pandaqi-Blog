@@ -1,0 +1,73 @@
+@use "modules/globals" as g;
+
+@mixin purple-link() {
+    color: #cbb4ee;
+
+    &:hover {
+        color: #EEE;
+    }
+}
+
+/* Metadata (tags, date, breadcrumbs) */
+.metadata {
+    font-family: g.$header-font;
+    font-size: 1.0em;
+    opacity: 0.8;
+
+    .metadata-label {
+        opacity: 0.5;
+
+        .emoji {
+            display:inline-block;
+            width: 32px;
+            text-align: center;
+        }
+    }
+
+    &.flat {
+        margin-top: 1.0em;
+
+        div, nav, ul {
+            display: inline;
+
+            .metadata-label {
+                display: inline-block;
+                margin-left: 1.0em;
+            }
+
+            &:first-child {
+                .metadata-label {
+                    margin-left: 0;
+                }
+            }
+        } 
+    }
+
+    a {
+        @include purple-link();
+    }
+}
+
+/* Tags */
+.tags {
+    ul {
+        @include g.remove-standard-list-style();
+        display: inline; 
+    }
+
+    ul {
+        li {
+            margin-left: 0.3em;
+        }
+    }
+}
+
+#table-of-contents {
+    h2 {
+        margin-bottom: 0.5em;
+    }
+
+    a {
+        @include purple-link();
+    }
+}

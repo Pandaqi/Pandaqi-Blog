@@ -1,0 +1,105 @@
+@use "modules/globals" as g;
+
+/* Core Stuff */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: g.$def-font-size;
+    line-height: 1.7;
+    color: g.$text-color;
+    font-family: g.$body-font;
+    background-color: g.$bg-color;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.center-block {
+    max-width: g.$def-width;
+    margin: auto;
+}
+
+.padding {
+    padding: 3rem 1rem;
+}
+
+/* Links */
+a {
+    color: g.$text-color;
+    @include g.no-underline();
+    transition: color g.$def-trans, text-decoration g.$def-trans;
+}
+
+.single-article, .introduction-content {
+    a {
+        color: #E0D68A;
+        @include g.straight-underline();
+
+        &:hover {
+            color: #EEE;
+            @include g.wavy-underline();
+        }
+    }
+}
+
+/* Headings */
+$header-underline-thickness: 3px;
+
+h1, h2, h3, h4, h5, h6 {
+    color: #E0D68A;
+    font-family: g.$header-font;
+    margin-bottom: -0.5em;
+    line-height: 1.2em;
+
+    @include g.wavy-underline();
+}
+
+h1,h2 {
+    text-decoration-thickness: $header-underline-thickness;
+}
+
+h1 {
+    font-size: 4.0em;
+    margin-top: 0.33em;
+    margin-bottom: 0.0em;
+
+    &.no-underline-heading {
+        @include g.no-underline();
+
+        .text {
+            @include g.wavy-underline();
+            text-decoration-thickness: $header-underline-thickness;
+        }
+    }
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: -0.325em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    max-height: g.$max-img-size;
+
+    width: auto;
+    height: auto;
+
+	display: block;
+    margin: auto;
+}

@@ -1,0 +1,27 @@
+baseURL = 'https://pandaqi.com/blog/'
+languageCode = 'en-US'
+title = 'Pandaqi Blog'
+theme = 'pandaqi-blog'
+paginate        = 6
+summaryLength 	= 18
+
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+sectionPagesMenu = "main"
+
+[params]
+    testOnlyCriticalStyle = false
+
+[markup.goldmark.renderer] 
+    unsafe = true
+
+[markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    tabWidth = 4
+    noClasses = false
