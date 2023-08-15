@@ -301,3 +301,5 @@ Lots of Regular Expression magic helped a lot. Besides that, I "justified" this 
 Now all my websites are small, clean, streamlined, and use the same Hugo system. The three Pandaqi websites live on the same Pandaqi domain. (I don't have to pay for pandaqitutorials.com anymore!)
 
 The only bad apple that remains, is my [personal blog in Dutch](https://nietdathetuitmaakt.nl), which uses Wordpress. But now I know that WordPress converters exist for Hugo, so maybe one day ...
+
+**Update!** That day has come! My blog has been moved as a subdomain (just a small part) of my official author's website at [tiamopastoor.com](https://tiamopastoor.com/blog/) Now everything runs on the same Hugo systems. All is well with the world. (No seriously, saves me a ton of time and hassle.)
