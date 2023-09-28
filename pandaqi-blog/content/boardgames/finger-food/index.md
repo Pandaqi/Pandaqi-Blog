@@ -1,11 +1,11 @@
 ---
-title: "Hand Pies"
+title: "Finger Food"
 date: 2024-01-25
 emoji: "🖐️"
-thumbnail_media: "hand_pies_header.webp"
+thumbnail_media: "finger_food_header.webp"
 ---
 
-Welcome to the devlog for my game [Hand Pies](https://pandaqi.com/hand-pies). I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
+Welcome to the devlog for my game [Finger Food](https://pandaqi.com/finger-food). I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
 
 ## What's the idea?
 
@@ -23,8 +23,14 @@ All you need to do is ...
 * On your turn, place a finger from your chosen hand onto a square on the board.
 * _Somehow_ this scores points, or does something interesting, and allows you to play a game
 
+For the longest time, the working title was "Finger Twister". While it conveyed the general sense (it's like playing twister with your fingers, on a board the size of a paper), it otherwise steered people entirely the wrong way with their expectations.
+
+Then the working title became Hand Pies. I might still accidentally call the game that in certain places.
+
+But in the end, after asking others and taking a vote on it, the name "Finger Food" was chosen. It's simply the ideal pun---a game about food, and a game about placing fingers to get it, and the term itself even means something---and it "flows" or pronounces more easily than something like Hand Pies.
+
 {{% remark %}}
-This project was called "Finger Twister" and "Finger Food" at the start. (And "Finger Pies" for a single day, until I learned the actual slang meaning of that ...)
+This project was called "Finger Pies" for a single day, until I learned the actual slang meaning of that ...
 {{% /remark %}}
 
 ## How do we implement this?
@@ -213,7 +219,7 @@ Well, the theme is pretty clearly that of a bakery or candy land. It should be r
 
 So that's what I went for ... initially. 
 
-As the project continued, I landed on two possible names "Hand Pies" and "Fingerfood". Both types of food, however, are _not_ candy! The first one would be more bakery/cake related, the second one more about small party food.
+As the project continued, I landed on two possible names "Hand Pies" and "Finger Food". Both types of food, however, are _not_ candy! The first one would be more bakery/cake related, the second one more about small party food.
 
 Even though I love colorful and poppy art, it just didn't seem to fit. Because the icons I actually needed were things like "bread" or "milk", not "a lolly" and "bright candy wrappers". The images I generated (with AI) and the ones I drew myself all just felt ... off.
 
@@ -222,7 +228,7 @@ On top of that, some ideas for ingredients (like _butter_ or _flour_) are ... re
 So I tried both.
 
 * I created a handful of assets for the _pie_ theme.
-* I created a handful of assets for the _fingerfood_ theme.
+* I created a handful of assets for the _finger food_ theme.
 * Then I checked the resulting boards and decided which one I liked better.
 
 The final images are a mixture between AI-generated (after a _lot_ of experimentation to find consistent prompts that I liked) and drawn myself.
