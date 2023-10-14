@@ -7,7 +7,7 @@ thumbnail_media: "creature_quellector_header.webp"
 
 Welcome to the devlog for my game [Creature Quellector](https://pandaqi.com/creature-quellector). In this devlog, I'll briefly describe the process, problems I faced, how I solved them, why I made certain decisions, yada yada.
 
-And yes, I say "briefly". This devlog is over 5,000 words, but that's quite short for any development, and especially for one with as many bumps and sidetracks as this one.
+And yes, I say "briefly". This devlog is nearly 6,000 words, but that's quite short for any development, and especially for one with as many bumps and sidetracks as this one.
 
 Let's get the story rolling!
 
@@ -171,7 +171,7 @@ As stated, I picked the 4 colors RED, BLUE, GREEN and PURPLE. They're simply at 
 
 Each color has 4 types. (For example, Fire has Fire, Lightning, Star, Dragon.) Each has a different, simple icon. For two of them, I was _heavily_ inspired by the Pokémon icon for the type, because I just couldn't figure it out myself. The others were done by me without reference, because, as I said, I want to move away from feeling like "you just copied Pokémon".
 
-@TODO: Image => devlog_quellector_types
+![My own set of element/type icons.](devlog_quellector_types.webp)
 
 Additionally, each type has its own **action**. This also requires its own, simple icon.
 
@@ -185,7 +185,7 @@ I decided to first invent a few "shorthands" for the actions. For example, there
 
 With those shorthands, most icons were very basic and straightforward (as they _should be_!) I also decided to add a slight border around them, to indicate they are the _action_ icons. A small thing, and it might change, but I think it really helps players quickly distinguish the symbols.
 
-@TODO: Image => devlog_quellector_actions
+![My own set of action icons.](devlog_quellector_actions.webp)
 
 ### Designing the cards
 
@@ -228,7 +228,7 @@ So I placed it at the side. Not only what _this_ card counters, but also which t
 
 After all that work, we get cards like below. (I hadn't fully decided the layout, but that wasn't necessary. I could already write the code and continue work with this general template.)
 
-@TODO: Image => devlog_quellector_card_sketch_v1
+![Initial attempts at finding a card layout.](devlog_quellector_card_sketch_v1.webp)
 
 {{% remark %}}
 I chose a very minimal and quite modern design for this game. Partially to make it easier to play, as there'll be a lot of calculating + checking icons. But also because I already created a few card games just before this one, with more traditional or "antique" designs, and I didn't want to repeat myself.
@@ -257,7 +257,9 @@ It's a rather standard way to ensure types and actions are distributed fairly ac
 
 The downside is that I can't ensure this balance if you print multiple different decks, and then start to mix them. To ensure that, I'd have to balance the numbers _within_ each type. Doing that, however, makes the game too uniform and safe, so I don't want that.
 
-@TODO: Some image of the final result here
+I wanted to show an image here to break up the text, but, well, so far this is all just code and numbers. And a screenshot of a bunch of numbers that tell me "hey the types are properly distributed!" isn't that interesting.
+
+But don't worry, the visuals will come soon!
 
 ### Maybe not so boring after all
 
@@ -345,10 +347,12 @@ Until I tried to blend two animals. I picked one water animal (a goldfish) and s
 
 While this is no magic wand---it never is---this does force the AI to be creative and come up with interesting usable results. A goldfish-bird immediately looked like it _could_ be a Pokémon.
 
-@TODO: Image of this?
+Below is an image of _one_ creature for each possible element. (There are multiple spritesheets like these so that even within one element there is variation.)
+
+![As always, editing done by me all over the place, but not terribly much.](quellector_creatures_1.webp)
 
 {{% remark %}}
-Though, in the case of weather, I did end up drawing my own rain _on top_ of the image afterwards.
+Though, in the case of weather, I did experiment with drawing my own rain _on top_ of the image afterwards. It looked good, but seeing that it was the _only_ image with this extra treatment, it felt out of place and I removed it again.
 {{% /remark %}}
 
 Even though I was already done with generating images, I decided to do another round a few days later. This new approach yielded much better results for certain elements. (Usually, I'm happy with about 50% of the results after an hour or two. The other 50% is "usable", but I write down which ones I'd like to improve by hand if possible.)
@@ -363,7 +367,9 @@ In my material generator, it picks two of them (one belongs to the main type of 
 
 This meant that a beautiful creature couldn't be ruined by a bad background in the image (or vice versa). It meant more control over both of them and how prominent they are. It also meant more creativity and personal input into the process, preventing the feeling of "being lazy and letting AI do all the work".
 
-@TODO: Images of those two, separated?
+Below is a separate spritesheet with one _background_ for each type. Because, again, there are multiple of these so that backgrounds stay diverse as well.
+
+![Not sure if the dark one is too out-of-place right now, we'll see when we have the full cards.](quellector_backgrounds_1.webp)
 
 ### About rules images
 
@@ -377,7 +383,7 @@ With every project, you learn a little more.
 
 Expect all my rules from now on to find _some_ visual decoration to frame rules images and clearly set them apart.
 
-@TODO: IMAGE from the rulebook
+![This is clear on its own, but also very clear when combined with other text/a resizable rules window](rulebook_image_gameplay.webp)
 
 ## A major change
 
@@ -434,14 +440,40 @@ I am a _little_ sad about losing the whole counter system and the UI part I made
 I made the change in 5 minutes by just ripping out some parts and turning a few bits of code into a comment. That really shows how the whole counter system was just needless indirection on top of the rest.
 {{% /remark %}}
 
+I forgot to take a screenshot/save a PDF of the old versions. So here's a screenshot of the _old_ versions of the card, next to the _new_ version of the rulebook image explaining what each element of a card means. 
 
-## Playtesting
+Sorry, it's the best I have! It's also the first screenshot of the actual (near) finished cards, I realize now. If you want to see the full set of cards, you can obviously just go to my website and get yourself a PDF!
+
+![Yes, the counter icons are even wrong on this one, as Purple obviously isn't meant to counter ... Purple.](quellector_old_and_new_card_skeleton.webp)
+
+## Playtesting & Conclusion
 
 We finally have our cards, balanced and polished, so I can start playtesting the game with people _other_ than myself.
 
-@TODO Lala
+Unfortunately, I wasn't able to test the game as much as one should. As always happens with me, projects that see too many obstacles (and take too long) really take a toll on me and I've taught myself to just "finish it and move on" at some point. 
 
+I was so _done_ with working on this game that I finished it, did one playtesting night to see if there were no major mistakes, and that was that. Taking on the extra task of "create a whole layout library" while in the middle of this project was a _bad idea_. 
 
-## Conclusion
+Lessons learned. Not doing that again. Finish a project first, _then_ consider major rewrites or code architecture challenges.
 
-@TODO Lala
+Anyway, the game worked when I tested it against myself, it also worked when played with others. It's a really, really fast game. It's over once people have seen most of the cards that are in this particular game (and can thus make an educated guess whether their hand is the best one or not). There's a good amount of luck, but also a good amount of strategy. 
+
+You can certainly do smart moves by picking _who_ you want to battle and _which cards_ you want to use. 
+
+Starting with a "better hand" (lucky hand) isn't a big deal, because you don't _know_ if it's good (as you don't know the other cards yet), and you have to fight at least once before you can say you're done. (And then again, a game is over after 5 minutes.)
+
+The rules---especially after removing the Counter system---are really simple and quick to teach.
+
+The fact that no cards are ever drawn/removed enhances strategy while keeping the game small and light. The fact that all play happens by battling other players creates super high interactivity---which, if you know my games, is something I always aim for.
+
+So yeah, the game is pretty good, especially for what it's supposed to be (a quick, light filler game you might even play while waiting in line). But I'm not going to lie and pretend I tested this more than that, and I think there's a _better_ version of this game somewhere (both gameplay and graphics). That always happens though:
+
+I am done with this game! It became something that took 10x more time than it should've, and I'm ready to move on. As soon as you start to hate every aspect of your current project and just _can't_ make yourself work on it, that's when you know you should just finish it and move on.
+
+As such, you might also have guessed that I'm writing this devlog at 12 AM as the _last task_ from the to-do list before the game is officially done. And I am tired, so I'm stopping here! 
+
+(This might all sound a bit negative, but I want to remind you that this is a completely honest and transparent _devlog_ about the journey of developing such projects. Making games is hard. Not everything works out, or feels good, or stays fun forever.)
+
+Until the next devlog,
+
+Pandaqi

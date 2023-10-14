@@ -435,6 +435,8 @@ With all of _that_ done, I create the final marketing materials (header, icon, p
 
 When it comes to playtesting, not much more needs to be said. The game works. Despite some minor issues with balance and generation (there's _always_ more tweaks to be made to probabilities, points, random generation, etcetera) ... it all just works wonderfully.
 
+Sure, you can get stuck quickly, but that will be entirely your own fault. No matter where you start or what you try to do, you generally have at least two or three moves you can make, interesting in their own ways. When people "die" ( = get entirely stuck), it usually happens within one or two rounds, which means nobody has to wait for a long time as others continue playing.
+
 A very simple game. Easy to pick up and play anywhere, with anyone, in little time. Boards are quite pretty and distinct---if I may say so myself---without looking childish or going overboard. Being able to explain rules (or score points) _on the paper itself_ is also a great addition that I'll surely try to turn into a tradition for all my one paper games.
 
 So that's it for this game!

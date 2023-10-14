@@ -471,4 +471,48 @@ With all that done, the boards were now both pretty and correct, and all the rul
 As I've mentioned multiple times, there's only so much you can do while testing a game against yourself, or testing a game with ugly white paper and half the icons lacking. Other people only come aboard---and really give the game a chance---if it already looks mostly finished and polished. Without that, they'll either disregard the game immediately and not properly test it, or they'll shroud all their critique/feedback in "but the game isn't finished yet so it doesn't matter", which is also useless :p
 {{% /remark %}}
 
-@TODO
+### Playtesting results
+
+I wasn't able to do as much playtesting as I'd liked, but enough to verify the game ideas and find any potential issues.
+
+The game ... works?
+
+Sure, with 4+ players the space is cramped and there's a mess of fingers. _That's the point._ It's a quick, silly, party game that everybody immediately started calling "finger twister".
+
+And yes, this makes counting score sometimes a bit difficult. It's useful to have one person take a photograph or write down the final board situation (with their other hand), to prevent accidentally removing your hands and forgetting the exact scoring.
+
+None of this breaks the game or makes it less fun.
+
+Extremely easy to teach and start playing. The first game, people will probably be annoyed at themselves for their "stupid thumb placement", and one player will one with a simple and obvious strategy. But players learn from that---the whole point of the first game is to learn the basics of the strategy and "smart moves"! 
+
+And indeed, in subsequent games people actually place their fingers more smartly, and block another player going for their 5th Egg, or suddenly devalue their Sugar with their final move. There's a surprising strategic depth here, without making the game too complicated or "thinky". 
+
+To most people, it's not "thinky" _at all_ :p It's just a fun ride of "get shiny food you like, block others, be blocked, twist your hand in an effort to score just a few more points, then hope you end up with the highest score".
+
+After <5 minutes, you can grab another paper and play again.
+
+That's perhaps the biggest thing that makes the game work. It's not necessarily about who has the biggest hands or blocking each other's moves. It's about who can read a new (randomly generated) board _the fastest_, so they know exactly which 5 ingredients will get them the most points this time.
+
+It's a fast interactive puzzle that somehow manages to be physical and loose as well.
+
+Not for everyone, but I quite like what I made and call it a success. In fact, I'm already pondering the possibility of other "finger-based" games ...
+
+{{% example %}}
+For example, if the game is short enough, one could just use their finger as their _pawn_. No need for the usual One Paper Game approach of "cross out your old icon, write it somewhere new". Just use your finger as your pawn, and a different world of possibilities opens up for my One Paper Games.
+{{% /example %}}
+
+## Conclusion
+
+A weird and experimental game. But it worked out and I think the boards are colorful, vibrant, easy to read, and near professional level.
+
+Not bad for the first finger-based game. Still many ways to improve upon the idea.
+
+As always, if you play the game and have any remarks (good or bad), let me know. As I regularly mention, I'm on my own and cannot playtest/stress test these games as much as I should. As I _also_ regularly mention, the benefit of these online-randomly-generated games is that they can _always_ be improved. 
+
+I can come back two years later, tweak a few numbers, replace one image, and from now on the game is _better_. For everyone, for always.
+
+As it stands, though, I don't see major flaws in this game and everyone has enjoyed the quick test games of Finger Food, despite the board / player count / ingredients used.
+
+Until the next devlog,
+
+Pandaqi
