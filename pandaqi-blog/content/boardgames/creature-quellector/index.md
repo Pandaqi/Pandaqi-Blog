@@ -460,13 +460,30 @@ Anyway, the game worked when I tested it against myself, it also worked when pla
 
 You can certainly do smart moves by picking _who_ you want to battle and _which cards_ you want to use. 
 
-Starting with a "better hand" (lucky hand) isn't a big deal, because you don't _know_ if it's good (as you don't know the other cards yet), and you have to fight at least once before you can say you're done. (And then again, a game is over after 5 minutes.)
+Starting with a "better hand" (lucky hand) isn't a big deal, because you don't _know_ if it's good (as you don't know the other cards yet), and you have to fight at least once before you can say you're done. (And then again, a game is over after 5 to 10 minutes.)
 
 The rules---especially after removing the Counter system---are really simple and quick to teach.
 
 The fact that no cards are ever drawn/removed enhances strategy while keeping the game small and light. The fact that all play happens by battling other players creates super high interactivity---which, if you know my games, is something I always aim for.
 
-So yeah, the game is pretty good, especially for what it's supposed to be (a quick, light filler game you might even play while waiting in line). But I'm not going to lie and pretend I tested this more than that, and I think there's a _better_ version of this game somewhere (both gameplay and graphics). That always happens though:
+I only made these small changes/clarifications after testing. All of them relate to the _actions_ and how they're handled. (As I expected, they're the lifeblood of the game that need finetuning.)
+
+* When you have the most action icons, you _must_ execute one of the actions. (It's not optional.) In practice, this was simply more fun and more interesting. It means you can actually hinder yourself if you're not smart about your action icons. It means something always happens, instead of players deliberating for 30 seconds then ... doing nothing.
+* Similarly, if there's a tie, the defender wins. It's consistent with the overall fighting rules, and it, again, ensures at least _one_ action happens.
+* When calculating your final score, action icons used to count as +1 (always). In practice, though, it's more consistent and easy to understand if they can be countered as well (just like regular types). 
+* Most of the actions were designed with the idea that you want to win fights more often than lose them. However, in practice, it's more 50/50. As such, some of the actions were changed to also allow the other side. (For example, an action that allowed adding a card to the squad, now also allows removing one.)
+
+**My only major gripe** is that the game can be a bit random, as from the start you have no idea what other players have in their hand or what they'll put into a battle. (As a consequence of that, "winning" a battle is perhaps discouraged _too much_ at times. Because if you have 6+ cards, it's highly likely that you have all elements and thus are left with 0 points.)
+
+This isn't a real issue in the sense that you can _theoretically_ learn the other player's hands (after a few turns): each battle has players publicly showing cards, then trading them, so you _know_ they have those cards. In practice, however, this requires serious memorization skills that most won't have (or don't care to apply).
+
+The _purple_ actions somewhat combat this, as they're about revealing and giving information. I searched for some simple rule change or tweak that might help more. Eventually, _one_ extra scoring rule did most of the trick.
+
+> Your actions are _not_ countered if you have the most out of all players.
+
+This means you can have a lot of cards (with all elements) and _still_ score reasonably, as long as you've consciously upped your number of actions. It's a blend between the original rule (actions can't be countered) and the new one (actions are just types when scoring) that mitigates this issue.
+
+So yeah, the game is pretty good, especially for what it's supposed to be (a quick, light filler game you might even play while waiting in line). But I'm not going to lie and pretend I tested this more than that, and I think there's a _better_ version of this game somewhere (both gameplay and graphics). That always happens though. You made something, so you learned how to do it better next time.
 
 I am done with this game! It became something that took 10x more time than it should've, and I'm ready to move on. As soon as you start to hate every aspect of your current project and just _can't_ make yourself work on it, that's when you know you should just finish it and move on.
 
