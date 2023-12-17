@@ -340,9 +340,7 @@ The day I actually get a new computer that _works_ will be a wonderful one. Hope
 
 ## Playtest v2
 
-@TODO Describe
-
-@TODO Image (or maybe video) of one such playthrough
+_There was supposed to be a bit about the last playtesting and polishing here, but somehow it was removed or not copied. And seeing that I make these projects 6+ months before they release, I don't remember any of this and can't write it again. Sorry. Let's jump to the conclusion._
 
 ## Conclusion
 

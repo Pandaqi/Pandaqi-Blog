@@ -10,7 +10,7 @@ I will reveal my interesting flaws and successes, hopefully inspiring others _an
 
 Why? Well, this article started its life when I ran out of space around my work area.
 
-Over the years, I've made numerous games, and the amount per year only seems to go up. Most of those games are _board games_, which means I have printed and cut physical materials. As it turns out, physical items take up _space_. 
+Over the years, I've made numerous games, and the number only seems to increase each year. Most of those games are _board games_, which means I have printed and cut physical materials. As it turns out, physical items take up _space_. 
 
 When I made my first few games, I could easily stash them away in some random container. They were just a handful of cards, or a few playing boards printed on an A4 paper.
 
@@ -26,6 +26,8 @@ What's important is that I had to take out, look at, and clean up _aaaaaalll_ th
 All early games will have some Dutch text written over it. It took a while before I defaulted to creating games in English. I'll translate whenever it's important.
 {{% /remark %}}
 
+I apologize in advance for the image quality. I have the cheapest smartphone I could find and live in an old house that's very dark. No amount of lights, flashlights, waiting for sun, etcetera could make these images any brighter. (I ended up applying an automatic post-processing filter to all images.)
+
 ## Who are you?
 
 I'm Pandaqi, or Tiamo Pastoor. A freelance artist who creates video games and board games (though mostly board games), writes books, creates music, and much more.
@@ -34,7 +36,7 @@ I'm not perfect by any means. In fact, I've never even had a game traditionally 
 
 I _do_ know that I am a much better designer than I was five, ten, twenty years ago. I know I've learned a lot, I know many of my mistakes are common across new game designers, and I know the things I make now are consistently good-looking and somewhat fun.
 
-This article simply chronicles my process until the current day.
+This article simply chronicles my process until the present day.
 
 ## High School
 
@@ -53,9 +55,9 @@ Every game I made was either ...
 
 Below are images from two of those card games. The first game was from the _start_ of high school, the second near the _end_ of high school.
 
-@TODO: IMAGE
-- That weird card game with Avatar backgrounds
-- The prettier card game with animals
+![I modeled the "creatures" myself in Blender, but used screenshots from the Avatar movie for those nature backgrounds.](ccg_1_avatar.webp)
+
+![I drew everything myself and clearly put more time into legibility this time.](ccg_2.webp)
 
 You can clearly see the progression in terms of graphics and design. I can't really speak to the game itself, because first of all those cards are _completely unreadable_, and secondly I lost the rulebook.
 
@@ -65,9 +67,19 @@ I _do_ remember playing the second one---it's easier to get people playing when 
 
 As expected, I abandoned these projects rather quickly.
 
+**UPDATE!** I found some of those old fantasy maps, and hidden inside were some games that were probably even older. I have absolutely no clue how to play them or if I ever tested them with somebody, but below are some images of that.
+
+![A collection of old games. Left side shows some sort of quartet, top and bottom some abstract tile-placement game.](misc_old_games.webp)
+
+![I'm pretty sure this "map" and all those resources on top (wood, stone, sheep apparently) are related, but as always, I could be completely wrong. No rules or guide in sight.](fantasy_map_1_plus_games.webp)
+
+![These are just two parts of fantasy maps I could find. I don't think you were supposed to play a game with these.](fantasy_map_2.webp)
+
+End of update, let's continue the article!
+
 Below is an example of such a tile-laying game about creating roads.
 
-@TODO: IMAGE of Sint-themed road game
+![The more I studied it, though, the less certain I am they belong together. They were bundled and created with the same type of pencil/paper, but that might be a coincidence ...](sint_railroad_game.webp)
 
 For those who are confused, it is themed around a Dutch cultural thing called St. Nicholas (_Sinterklaas_), which means I probably made it especially for that event. (It's basically Christmas but a few weeks earlier and with some other questionable changes. In any case, gifts are involved, hence the gift icons.)
 
@@ -95,7 +107,7 @@ In fact, all through high school I tried to organize Werewolf evenings with frie
 
 So what did I do? I repurposed famous characters from the St. Nicholas "lore" as hidden roles in a Werewolf-inspired game.
 
-@TODO: IMAGE of gekleurde pieten van Nederland
+![The graphics were surely much better. Gameplay is debatable.](gekleurde_pieten_van_nederland.webp)
 
 In keeping with the trend, we only played this thing once, and it wasn't even that night. A few years later my mother found the box again and said "we paid so much for this, surely we should play it!"
 
@@ -129,7 +141,7 @@ I met her again at the start of university and we recalled this moment. That con
 
 At the end of the weekend, I had created "Tower of Zero: Ultimate Edition". (Yes, we're finally naming projects now.)
 
-@TODO: IMAGE of Tower of Zero
+![Yes, those are WAY TOO MANY cards. My rulebook even had a comment about it: "Sure, 128 cards is a lot, but then again, I have a big family."](tower_of_zero.webp)
 
 As you can see, the graphics received a boost in some ways, but degraded (compared to the previous project) in other ways. (I clearly hadn't figured out that things should be at a high resolution when printing.)
 
@@ -154,7 +166,7 @@ This is also the period in which I started imitating (or simply copying) existin
 
 I probably copied more, but the ones I clearly remember are Coup and The Resistance. Unfortunately, I threw away my own Resistance artwork once we got the real game. But I still have Coup!
 
-@TODO: IMAGE of COUP
+![I threw away the coins I'd also painted for the game, as they were fiddly and got everywhere. And not needed: I have enough stuff to swap for coins in games like these](coup_clone.webp)
 
 As I said, this was mostly training. I saw this as an opportunity to practice painting some animals and gold tokens. (I simply repurposed the characters from the game as random animals.)
 
@@ -186,11 +198,15 @@ After the previous phase, I went on a rampage creating games all about networks 
 
 I created three in quick succession, each one better than the other. (On my Dutch blog, which was my only website at the time, I named these "spiritual successors" of each other.)
 
-@TODO: Scheve Schapenschutters
+![Much nicer rules and components. In reality, though, this game would take up the ENTIRE table, as the distance between shooter and sheep can grow arbitrarily long.](scheve_schapenschutters.webp)
 
-@TODO: Slingerende Schoten
+![Even nicer rules and components! Unfortunately, the rules grew on exceptions and complexity as I tried to solve issues.](slingerende_schoten_1.webp)
 
-@TODO: Naïvigatie
+![Looking back at this game, I can now immediately see BETTER ways to solve those issues. So this game might also be re-released someday.](slingerende_schoten_2.webp)
+
+![Same here. I focused a lot on graphics and rulebook, but forgot to really test and hone the gameplay.](dierenbandiet.webp)
+
+![Same with this one. It's a strong game, but the rules are way longer and more convoluted than they have to be. And I was a bit lazy with the graphics on this one.](naivigation.webp)
 
 What drew me to these games? I guess it was the _randomness_ and _variety_, combined with that minimalism I was searching for.
 
@@ -249,7 +265,7 @@ In my estimation, it would take 2--2.5 hours to play. It had loads of different 
 
 _"In your estimation"?_ Yeah, it was never played. It _was_ finished. Or, at least, a first (rough) version was done.
 
-@TODO: IMAGE of Che-ou-wyen
+![That's a looooot of material. But it looks nice and professional, for the most part. At this point I was getting a grasp on graphics and presentation ... and surely needed to invest more time in actual gameplay.](che_ou_wyen.webp)
 
 Once again, I focused on the graphics first, and basically convinced myself "well I can always change the rules, I'm pretty sure this first idea of mine will work out!"
 
@@ -293,7 +309,13 @@ This moment, which coincided with leaving the terrible educational system for go
 * Starry Skylines
 * One Pizza the Puzzle
 
-@TODO: IMAGE of ALL THOSE?
+![The nicest random boards I made at that time + very nice and simple rules. I do recommend using pawns or cubes instead of the vehicles, though, as moving paper over paper is never a pleasant experience.](timely_transports.webp)
+
+![Unstable Universe: still my most innovative game ever, and it actually _works_. Though storing the cut-off-game-boards later, for articles like these, is a bit of a pain.](unstable_universe.webp)
+
+![Starry Skylines: three test games.](starry_skylines.webp)
+
+![One Pizza: several test games and rulebook. Also notice an OLDER version of the appendices, with placeholder rectangles where images should come, and lots of handwritten notes by me.](one_pizza_1.webp)
 
 Each time, I got better at generating the random boards/puzzles and simplifying the rules. The difference between Paper Thieves and One Pizza is still huge, even though they have the same core idea and weren't made that far apart. (Again, iteration and just doing something a lot will make you better at it.)
 
@@ -371,7 +393,7 @@ Lastly, **One Pizza the Puzzle** was a crucial game in my development.
 
 The randomly generated boards use loads of smart algorithms I invented on the spot. The result is a board that generates _extremely quickly_, but always looks and plays well.
 
-@TOOD: IMAGE of One Pizza?
+![One Pizza: close-up of one test game. Definitely the most intricate (yet clear) randomly generated boards I made thus far.](one_pizza_2.webp)
 
 I probably tested this game 2 or 3 times as often as I did any game before it. This caused major rewrites and changes, multiple times, to the whole game.
 
@@ -393,19 +415,25 @@ The _other_ reason for the long pause, was simply a string of failures.
 
 I tried to make an OPG about---you never guessed it---constructing a metro network. I wrote a generator to create beautiful _boards_ ... but never actually wrote down rules and couldn't figure out how the game would even work. (More on that lesson soon.)
 
-@TODO: IMAGE of Conductors?
+![This is only ONE of the many types of boards it could make. It still can, actually, I didn't lose that code. If I ever figure out the right rules, I'll publish this.](conductors.webp)
 
 I tried to make a _folding_ game. Yes, you read that right. The game is played through pieces of paper that you can _fold_. (Both to change their dimensions as well as their power, as only icons _showing_ would be in play.)
 
 This was a very experimental idea---even for my standards!---and I just couldn't figure it out at the time. I still have all the original notes and art, and I hope to one day open the document and immediately know how to fix those issues.
 
-@TODO: IMAGE of Folding Forest?
+![A paper prototype I made for the game. This showed me that the idea is solid, but "folding" is a bit flimsy a mechanic. As you see, I never even got so far as to draw ICONS on those pieces.](folding_forest_prototype.webp)
+
+![A sketch for what the final board design + asymmetric factions for Folding Forest would have to be.](folding_forest_sketch.webp)
 
 I tried to make a game about chasing cryptids. A hybrid game. One smartphone would allow you to take "photographs" or "search for clues" in certain areas. It was your job to find the current location of the cryptid before time ran out.
 
-A great idea. It got quite far. But, as with the others, it was experimental and ran into issues I didn't know how to solve then. (I also made the issue of writing a story in this "game world" at the same time, which divided my attention and caused _both_ to never be finished.)
+A great idea. It got quite far. But, as with the others, it was experimental and ran into issues I didn't know how to solve then. (I also made the MISTAKE of writing a story in this "game world" at the same time, which divided my attention and caused _both_ to never be finished.)
 
-@TODO: IMAGE of Proof of Loch Ness
+![This is one test game. Over time, you explore more of the board ( = subdivide it), and write down clues (broken trees, footprints, etcetera) about where the cryptid was or what photographs said.](loch_ness_prototype.webp)
+
+{{% remark %}}
+Unfortunately, I have no screenshot of the UI on the website and have since lost my license for the software in which the rules (with nice graphics and such) were written. Hopefully, one day, this game is brought back to life and you can simply PLAY it.
+{{% /remark %}}
 
 As with most creative people, the fact they don't put out some new work doesn't mean they're _doing nothing_. It probably means their last 10 ideas have failed and they're still searching for the new big one.
 
@@ -478,6 +506,10 @@ Nowadays, if I can't write down the game loop for an idea, the idea immediately 
 
 That system has worked wonders for me for two years now.
 
+Below is an image of some of the _later_ "One Paper Games", made while this system was just in place.
+
+![The two games without pen marks are played without writing on them, that's why. Even within this short timespan---these games were basically made at the same time---you can see improvements in graphics and presentation.](modern_opgs.webp)
+
 ### Shots Fired
 
 I originally made this game for my little brother, when he was obsessed with Valorant (a shooter video game).
@@ -486,7 +518,7 @@ This was the last game I made _before_ learning the lessons above. It was also t
 
 As such, the game is currently in a bit of a limbo.
 
-@TODO: IMAGE of Shots Fired
+![The last prototype I have of "Shots Fired". Notice the many, many handwritten notes on cards left and right about how they should work completely differently.](shots_fired.webp)
 
 The art and card design are all pretty professional. (What you're seeing is the very first prototype I tested against myself, not te final design. Also, if I ever release this game, the Valorant characters are obviously going to be replaced.)
 
@@ -522,7 +554,7 @@ This is the umpteenth example that rules need to be battle tested and iterated o
 
 ### Playful Rules
 
-At this point, I am basically on a journey to constantly trying to create the smallest, most minimal and accessible games possible.
+At this point, I am basically on a journey to create the smallest, most minimal and accessible games possible.
 
 Reduce material. Reduce rules. Reduce overhead. Solve ten problems with one rule. Carefully phrase the rules to cut 100 words from the rulebook.
 
@@ -548,7 +580,7 @@ What does that mean? The rules are online, for one. And inside of them I add a b
 
 This only takes a few hours to code and perfect (for me). For new players trying to learn the game, this is _gold_. You can click the button a few times, see the correct handling of that specific situation, and you get a much faster understanding for any game.
 
-@TODO: Playful example?
+![You can click the button, and it just generates an entirely new board situation, hand, possible moves, and how they score you. And this one of the first and simplest I made, for Keebble Domino.](playful_example.webp)
 
 I truly believe this is the future and all games should be taught this way. Which is why I'll keep working on it and trying to improve it.
 
@@ -588,6 +620,10 @@ Since my confusing stint with the "Shots Fired" game, I've made over 15 games. M
 
 And I truly believe One Paper Games, Hybrid Games, Playful Rules, all those ideas have a bright future.
 
+Below is one image with my many, many recent games. (Not even all of them, and some will come out in the future.)
+
+![Notice the humongous difference in graphics design, polishing, material minimalism, clarity, legibility, etcetera since all those first games.](modern_day_games.webp)
+
 And that's the whole journey, so far, to becoming a game designer.
 
 {{% remark %}}
@@ -619,6 +655,16 @@ Experience and doing trumps everything.
 Nowadays, I make (design) decisions in a heartbeat that I would've never made even a few years ago. And those decisions usually turn out to be right.
 
 I guess that's your goal when trying to become a game designer. I hope this article was interesting, gave some good advice, and perhaps inspired you to start turning those awesome ideas of yours into games.
+
+As the saying goes: "The master has failed more times than the beginner has even tried."
+
+I wish everyone in the world would grow up taking this quote to heart, because if you truly work according to this principle, you can learn anything, become anything, achieve anything. Faster than those stuck in the useless ways of the educational system, stuck in doubt, stuck in fear of failure.
+
+I guess it's a fitting metaphor. To my sadness, I've met so many people who will not even _try_ to play a (board) game. They're always adults---never kids---who preemptively tell themselves they won't understand _or_ who don't want to play unless they're almost guaranteed to win. Because to many above the age of 18, it is UNTHINKABLE to _try_ something and not _perfectly succeed the first time_!
+
+Kids understand that you need to just try stuff, make stuff, experiment, and fall on your butt. Over and over. Until you're suddenly very good at something. Somewhere along the way, we're taught to stop doing that. 
+
+Don't let it happen to you.
 
 Keep playing,
 
