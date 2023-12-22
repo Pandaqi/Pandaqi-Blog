@@ -68,7 +68,7 @@ This game is so simple that I want _all_ the rules _on the page_. I already did 
 
 Below is a quick sketch of this idea.
 
-!(Very rough sketch, of course. Doesn't even have the grid itself.)[board_sketch_v1.webp]
+![Very rough sketch, of course. Doesn't even have the grid itself.](board_sketch_v1.webp)
 
 In the final generation I always make the dimensions of things _dynamic_, so the size of the board/tutorial/inventories can change on the fly as we go.
 
@@ -105,7 +105,7 @@ I also added an "Evaluator" at the end of that chain (as always), which checks i
 
 For now, there is no other decoration. Just solid rectangles and images, which looks as follows:
 
-!(I usually make things prettier or add random decorations over time, often even after a game is "finished".)[magnetmen_generated_board.webp]
+![I usually make things prettier or add random decorations over time, often even after a game is "finished".](magnetmen_generated_board.webp)
 
 Notice the little drawings in the corner of the tutorial icons. Those are for _drawing_ them yourself, in your inventory. (You can't expect people to draw those complicated icons every time :p) They might still be too complex right now---we'll see about that.
 
@@ -123,7 +123,7 @@ Due to some last-minute issues (with scheduling), I initially tested the game wi
 
 Below is an image of two of those papers. (With some quick notes by me as I try to improve the rules, which I'll explain below.)
 
-!(As usual, sorry for bad lighting and terrible smartphone camera. Though I did recently---finally---get a brighter light in my workspace.)[magnetmen_2_player_games.webp]
+![As usual, sorry for bad lighting and terrible smartphone camera. Though I did recently---finally---get a brighter light in my workspace.](magnetmen_2_player_games.webp)
 
 The results?
 
@@ -207,7 +207,7 @@ Also, my laptop is _really_ at the end of its life. Even the simplest changes (i
 
 So, to finish it off, a screenshot of the generated "Magnetmen" that did **not** make it into the game. (Adding another set seemed overkill anyway, but it would literally have killed my computer I think. Also, I decided that a game about Magnet people should probably not include animals. Still, I wanted to show these _somewhere_, because they were quite nice.)
 
-!(A screenshot of some unused Magnetmen. This is just a selection; there are always hundreds of images that look great but just didn't work in this particular game.)[unused_magnetmen.webp]
+![A screenshot of some unused Magnetmen. This is just a selection; there are always hundreds of images that look great but just didn't work in this particular game.](unused_magnetmen.webp)
 
 Until the next devlog,
 
