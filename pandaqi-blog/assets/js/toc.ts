@@ -1,8 +1,8 @@
-/* Table of Contents */
-const tocToggle = document.getElementById('toc-toggle');
-const toc = document.getElementById('table-of-contents');
+export default () => {
+    const tocToggle = document.getElementById('toc-toggle');
+    const toc = document.getElementById('table-of-contents');
+    if(!tocToggle || !toc) { return; }
 
-if(tocToggle && toc) {
     tocToggle.addEventListener('click', function(ev) {
         if(tocToggle.innerHTML == 'Show')
         {

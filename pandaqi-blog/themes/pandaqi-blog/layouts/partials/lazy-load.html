@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}">
 {{ end }}
 
-{{ $fonts := resources.Get "js/fonts.js" }}
-{{ $main := resources.Get "js/main.js" }}
-{{ $js := slice $main $fonts | resources.Concat "js/bundle.js" | resources.Minify }}
-<script src="{{ $js.RelPermalink }}"></script>
+{{ $build_options := dict "targetPath" "js/main.bundle.js" -}}
+{{ $js := resources.Get "js/main.ts" | js.Build $build_options | resources.Minify }}
+<script src="{{ $js.RelPermalink }}" async defer></script>
