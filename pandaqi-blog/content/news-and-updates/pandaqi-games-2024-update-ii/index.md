@@ -1,102 +1,132 @@
 ---
 title: "Pandaqi Games: 2024 Update II"
-date: 2024-07-03
+date: 2024-06-03
 emoji: "🎮"
 ---
 
-This article explains the reason behind another big update to my [game studio website](https://pandaqi.com). One that is still in progress and probably will be for a while.
+This update to the Pandaqi Games website is much smaller than usual, but still very important. That's why I wanted to write a short article about the problem, the changes and why I made them.
 
-What's the issue?
+## What's the problem?
 
-## The Problem that broke me
+I've been making games for a while now, at a pretty rapid pace. They all live on the [Pandaqi Studio](https://pandaqi.com) website, and most boardgames generate their own material or have interactive components that _also_ live there of course.
 
-Ever since I started (randomly) generating material for (board)games on my website, I've used my own system. I completely wrote my own tools, functions, library for drawing and generating stuff.
+This is _a lot_. Over time, the content folder for the website has grown unwieldy.
 
-(My oldest games used Phaser. But that was a HUGE dependency with lots of stuff I didn't need, and had an API that didn't really mesh with how I think and what I want to make. So I already transitioned later games away from that, and will completely remove the Phaser dependency entirely at some point.)
+Every project has its own folder with its name (spaces replaced by dashes). So if you want to check out the game called Sixpack, for example, you just go to `https://pandaqi.com/sixpack/`.
 
-For the most part, this has been fine. It's not rocket science to work with the HTML5 Canvas API, and provide tools/wrappers around it to help me create what I want to create.
+Now I have nearly 100 games, which means 100 folders at the root level of the website.
 
-As my website grew, however, and my projects became increasingly complicated and varied ... I ran into the limitations of what Canvas could do. I've always known that WebGL was more powerful and useful, but I like being minimalist _and_ work with a broken old laptop that literally can't handle WebGL. That's why I stayed with Canvas for my graphics and dedicated time to my own, minimal, efficient, consistent API.
+Even worse, more and more of these games are starting to be connected. I have a good idea and find 3 different ways to execute it: that's one project with 3 tightly intertwined games. 
 
-Until it just didn't work anymore.
+The first few times this happened, I simply gave them a long name: `<project name>` + `<game name>`. This didn't solve the folders issue, however, and just made the names incredibly long. 
 
-Here's the issue.
+{{% example %}}
+One upcoming set of games has folders like `nine-lives-tricksy-kittens` and `nine-lives-math-meows`. One game already released has the folder `slipper-slopes-trippy-touches`. It's just a lot of text.
+{{% /example %}}
 
-All Canvas commands are _immediate_. To draw an image, I literally call `drawImage` and it will stamp that texture onto the canvas I give it. 
+Or, maybe I invent a new genre of games and consistently get new ideas for that. This means I don't know the size of this project yet and I usually plan to update it with 1 or 2 new games each year.
 
-It will do so using the _current state_ of the Canvas. If I want a Drop Shadow effect on it, for example, I need to set that on the canvas beforehand.
+I put all of these issues on the backburner for a while, until I just couldn't ignore them anymore.
 
-Now let's think one step bigger: containers or groups. It's incredibly useful to be able to _group_ different graphics so I can move, rotate, tint, etcetera them all in one go. (And I can create a tree structure with parents and children.)
+## How do we solve it?
 
-How does this work?
-* We create a temporary canvas on which we draw all children.
-* We set the right properties for the _group_
-* And then we stamp that entire temporary canvas on the main one.
+A few months ago, when I started a new "project" of multiple games, I was quite sure how many there would be and that they'd all be finished. (I was right, by the way.) So ... I decided to try something else.
 
-This also works fine.
+* At the root level, just one folder for the entire project. It has its own page and styling as usual, which is like a "master page" for the project that links to the individual games.
+* Below that is a folder containing the individual games.
 
-But what if ... we have interaction between the groups? Most notably, what if we have a group where some parts have a different **blend mode**? (Or "compositeOperation", as Canvas calls it).
+So, instead of `nine-lives-tricksy-kittens`, it would just be `nine-lives/play/tricksy-kittens/`.
 
-* Say we have a group containing a texture (just some sprite/image) and a block of text. 
-* We want the texture to "blend" with the background. In other words, we need to set the `compositeOperation` for only that element and draw it on the current state of the canvas.
-* But ... we just saw that we can only draw groups _all at once_ if we want to apply effects. If we draw each image seperately, applying a Drop Shadow would do so _to each child separately_, which looks completely different (and is not the right behavior).
-* In other words, we must draw things individually (to the main canvas), as well as draw things collectively (from a temporary canvas). Which IS NOT POSSIBLE AT THE SAME TIME.
+At first, I tried `nine-lives/tricksy-kittens/`, but this meant all the individual games were at the root level of this subfolder. If a project would end up having 5+ games, this would just move the mess instead of solve it. So yes, all the individual games are in a subfolder with a sensible short name like `play`.
 
-I researched, and tried, and experimented, but it's just impossible by nature of how Canvas works. 
+After rewriting some template code in the website, I could do this and it would automatically find + build all related code/assets for games again.
 
-All I can do is provide hacks and workarounds for specific situations. For example, I can introduce a few more temporary canvases, draw everything both individually AND collectively, then "knockout" duplicate parts we don't need. This, however, is extremely slow, hard to do, and only works for very specific types of effects or blend modes.
+This turned out to be a _great_ idea!
 
-I had to give in. We had to make the switch to WebGL.
+It cleaned up the website's structure immensely. Everything was tucked away neatly, I could find things easily (even with multiple related games), I could share code and assets more easily (which is the benefit of related games).
 
-And this switch had to _wait_ until I got a proper computer, which means the website has been running on those small workarounds and hacks for a while now. (For the most part, I just make sure I never use a lot of blending modes or effects.)
+The positives outweighed the negatives for me.
 
-## Switching to Pixi.js as a backend
-
-Fortunately, I was right about the initial setup of my system. I wanted a unified API, in plain English, that required no extra setups or baggage. I made that and it probably never has to change.
-
-This allows me to keep all the generation code the same, but only swap out the _backend_. The actual implementation of what's happening behind the scenes.
-
-And there is no need to do all that work myself. The `pixi.js` library is robust, fast, battle-tested, and as small as possible. (Phaser actually uses a modified version of it behind the scenes. In a way, I've now bypassed Phaser and just gone straight to the one thing I actually need from it.)
-
-At a high level, this is what needed to be done.
-
-* Add a toggle that allows picking between my own renderer or Pixi
-* If Pixi is chosen, we ...
-  * Create a raw PIXI renderer (from the canvas we already have)
-  * Convert the raw resources into their PIXI equivalent
-  * Then ask the renderer to draw those and return the result
+* Yes, the url isn't just "the game name" anymore (in all cases). But pretty much nobody types URLs to my games directly. And if they become this unwieldy, this isn't a feature anyway.
+* Yes, this requires a few more "boilerplate" folders and files. But that's a tiny cost compared to the fact we need much _fewer_ files once the project gets multiple games, because they share a lot of structure.
 
 {{% remark %}}
-It only creates a renderer if it has no parent. Because if it has one, then it's surely not the root of this tree, which is the one holding the main canvas and managing the whole thing.
+This change also made building the website in Hugo quite a bit faster, though I'm not sure why that would be exactly.
 {{% /remark %}}
 
-The biggest issue, of course, is that conversion step.
+I briefly researched giving pages _multiple_ URLs, so I could also keep the original consistent scheme. But this quickly turned out to be practically impossible and also _unwanted_. It messes up machines, it messes up humans.
 
-Again, at a high level, this just means creating the right class:
-* A ResourceGroup becomes a PIXI Container
-* A ResourceShape becomes a PIXI Graphics object, and I need to convert between my own representation and whatever they want. (Though they mostly follow native Canvas commands, which my own library obviously also does, so that's fine.)
-* A ResourceImage becomes a PIXI Sprite / Texture
-* A ResourceText is done entirely by me. (My own TextDrawer class is way more powerful as it allows rich text / formatting.) The resulting canvas is simply given back to PIXI to draw as is.
-  * The same for any other resources that PIXI doesn't support (enough). I just call my own system and hand back the final canvas
+## Taking this further
 
-At a lower level, I convert between my own names for properties/filters/settings and what PIXI wants. Then I _set_ those properties on the object we just created.
+With this knowledge, I looked at all official and unofficial series of games I had.
 
-As I said, this is a work in progress. The need for a PIXI backend isn't urgent, especially not for one that supports 100+% of what my current system does, so I only work on it when I have the motivation. (Surprisingly, writing wrappers to communicate between two systems---one of which you barely understand---isn't exactly fun.)
+What do I mean by that?
+* Official = I knew this would be multiple related games beforehand, and I gave it a fitting name
+* Unofficial = the games just kind of grew into a series and now I feel the need to name it
 
-This also means I don't reap all the performance benefits of Pixi. When generating material, for example, we might generate 60 unique cards. That means each card has its _own_ canvas, its own content, its own draw calls, which means "batching" or "smart ordering" (of draw calls) isn't really a thing. But that's fine.
+This showed me that many of my games could be neatly categorized into a few bigger projects. Sure, a large chunk of them are completely unique and standalone, and they will stay that way.
 
-I _do_ reap the other benefits, such as WebGL supporting way more possible filters, effects and manipulations. 
+But let's take a look at those "Nine Lives" games (which will release publicly soon). They are the second game idea I made that revolves around _one specific number_, after Sixpack. In my ideas folder, there are about 6 more ideas, all using a different number.
 
-## Anything else?
+That's a series of related games! I can group them under a common name, create a master page with explanation, and it's all nicely structured.
 
-Most of the board games this year (as in, the entirety of 2024) were already done by the end of 2023. This means I didn't work much on what's being released, besides obviously checking if it all still worked after the updates in the meantime.
+Similarly, when I made "Kingseat" and "Finger Food", I started the idea of a "queuing game". Games you could play while waiting for something, while standing up, etcetera. So far, however, I just mentioned this on the game page and that was it.
 
-I've also planned a much better home page and structure for a while, but I just don't find time for it. (For example, the main page is just the list of latest games, without any special graphics or explanation about what site you landed on. Similarly, the banners for board games don't include pretty useful info like "min/max number of players".)
+But this is a series of related games! I can put them all under the banner "Waitless Game", with a master page that explains what they are and links to them. 
 
-I'm too busy making actual games _and_ plugging holes in the codebase running it :p So far, there's always been a list saying "but I _need_ this functionality for project A", which obviously takes precedence over "might be nice to have a prettier homepage"
+{{% remark %}}
+After a few months of using the awkward term "queueing game", I found that much better name in "waitless game".
+{{% /remark %}}
 
-But this list is shrinking, especially once my system can do anything that PIXI.js can do. At some point, as I chip away at the mountain of tasks, thing will get done.
+After creating the necessary folders and moving stuff around, the content folder of Pandaqi is now much better organized. And if you liked one game, you can more easily find the related games sharing theme/mechanic/ideas.
 
-Until the next update,
+So that's what I did before the last update.
+
+## The unexpected way in which this helps
+
+As mentioned, each of these projects might have 10+ ideas inside them. Only 1 or 2 have been made so far, but the others are simple and strong, and I _want_ to make them.
+
+So far, however, working with such large projects (5 or 10 _entire games_!) was overwhelming. I had to stop myself after a few games, pace myself, to prevent burnout on this singular game mechanic.
+
+Now, having grouped these games, this ideal pacing automatically presented itself!
+
+* Each major sequence of games simply receives one **update** each year. (On a fixed day, so for example: "Waitless Games always on 26th of Feb") One or two more games inside, some fixes to the old ones if needed.
+* And this is planned in advance, spread throughout the year.
+
+I now have clear deadlines for advancing each project, without risk of burnout _or_ forgetting/dropping it altogether.
+
+I still have enough open slots for unique, standalone board games. For just making whatever I feel like in that moment. But planning the major ongoing projects in this way helps _so much_ with making decisions and clarity.
+
+{{% remark %}}
+At some point, each project will obviously finish. Once the final idea is made, once I've fixed every issue that popped up over a long period. I have complete confidence that by then my brain will have invented some other set of games to take its place :p
+{{% /remark %}}
+
+## Any other updates?
+
+As usual, slight fixes and additions to all the code and frameworks that run the entire website. Mostly quality of life improvements, either for the user or for me.
+
+Also as usual, lots of games added since the last update.
+
+I've finally finished my PQ Words library. (It doesn't have _all words_, but it has pretty much any word most people would know, neatly categorized by type and difficulty. Several of my games already use it.)
+
+I've also finally created a definitive categorization for the website. Each game is tagged in a meaningful way and you can click these tags to search for related games. As I use this more, and create more games, this will only become _more_ useful for searching and finding the right game for you.
+
+Otherwise, any major updates I've planned have been pushed to next year. I am busy writing my Wildebyte books (and other stories) and feel I've already polished the Pandaqi website enough for this year.
+
+When I say major updates, you should think about ...
+* A better homepage (that actually looks different from other games overview pages on Pandaqi)
+* Trying a few completely different visual styles
+* Completely revamping my oldest games (which now often feel _very_ mediocre) or removing them if that turns out to be impossible. 
+  * Revamping might mean changing the contents of the game, or simply updating its code/page to my modern standards and systems. The second one is a lot of work but easy to do, the first one is harder and more risky.
+
+For now, my own system for generating material on the fly is "fast enough". But I'm clearly losing performance here and there, and the largest games might make the browser give a warning like "this page is not responding, kill it?" 
+
+My oldest One Paper Games still use the Phaser framework, simply because it draws the boards 10x faster than my own. But I want to stop using Phaser, because it doesn't support a lot of things that _my_ framework does support (and I need) and I want to get rid of this last remaining external dependency. 
+
+We'll see what I do with that.
+
+Anyway, this was a short update about structural (and URL) changes to how projects are sorted and labeled on Pandaqi Studio.
+
+Until the next time, keep playing,
 
 Pandaqi

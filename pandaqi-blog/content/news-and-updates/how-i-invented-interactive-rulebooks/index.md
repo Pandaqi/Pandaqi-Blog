@@ -171,16 +171,15 @@ These rulebooks _really_ try to hide any information you don't want. So it's not
 
 Yes, as I expected, the "interactive examples" are easy to code. I created a system for that, so I can plug in _any_ piece of JavaScript code easily.
 
-For the first game with an interactive rulebook---[Keebble](https://pandaqi.com/keebble)---this meant a generator that simulates one whole turn. It took 30 minutes to write, takes into account any rules or exceptions that might occur, and prints ~3 easily readable paragraphs.
+For the first game with an interactive rulebook---[Keebble](https://pandaqi.com/keebble-games/spell/keebble/)---this meant a generator that simulates one whole turn. It took 30 minutes to write, takes into account any rules or exceptions that might occur, and prints ~3 easily readable paragraphs.
 
 Honestly, you can just click that button a few times to learn the game, and ignore the rest of the rules :p
 
 I'm researching creating videos/animations using the [MotionCanvas](https://motioncanvas.io/) system. It's free, open source, and focuses on animation through _code_ and _vectors_. My laptop is so old it literally cannot run any video editor. I can code better than I can animate. So it seems the best fit. For now, though, it remains a stretch goal.
 
-
 ## Where to go from here?
 
-Want to see it in action? Check the [rules for Keebble](https://pandaqi.com/keebble/rules), the first game to use this system. Any feedback, as always, is appreciated.
+Want to see it in action? Check the [rules for Keebble](https://pandaqi.com/keebble-games/spell/keebble/rules/), the first game to use this system. Any feedback, as always, is appreciated.
 
 I've only created a few rulebooks this way. The future is uncertain---as always.
 

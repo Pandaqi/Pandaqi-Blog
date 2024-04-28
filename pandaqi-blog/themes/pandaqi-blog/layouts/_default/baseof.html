@@ -1,29 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	{{ $title_parts := slice (or .Title "Homepage") }}
-	{{ $title_parts = $title_parts | append "Pandaqi Blog" }}
-	{{ $title_parts = delimit $title_parts " | " }}
-	<title>
-		{{- $title_parts -}}
-	</title>
-
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-
-	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/favicon.png" />
-
-	{{ $options := (dict "targetPath" "css/critical.css" "outputStyle" "compressed" "transpiler" "dartsass") }}
-	{{ $style := resources.Get "sass/critical.scss" | resources.ToCSS $options }}
-
-	<link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
+{{ block "head" . }}
+	{{ partial "head.html" . }}
+{{ end }}
 <body>
 	{{ block "header" . }}
 		{{ partial "header" . }}

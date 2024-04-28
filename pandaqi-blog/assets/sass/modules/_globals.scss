@@ -10,8 +10,11 @@ $light-bg-color: #8E443D;
 $text-color: #DDD;
 $aside-font-size: 0.75em;
 
-$body-font: 'Raleway', Helvetica, sans-serif;
-$header-font: 'Dosis', Georgia, serif;
+$body-font-raw: "Raleway";
+$header-font-raw: "Dosis";
+$code-font-raw: "JetBrainsMono";
+$body-font: $body-font-raw, Helvetica, sans-serif;
+$header-font: $header-font-raw, Georgia, serif;
 
 $max-img-size: 500px;
 

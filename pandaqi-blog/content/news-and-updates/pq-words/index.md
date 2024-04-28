@@ -11,7 +11,7 @@ You can find the project on GitHub: [PQ WORDS on Github](https://github.com/pand
 
 You can see it in effect in a game like [That's Amorphe](https://pandaqi.com/thats-amorphe). On the website, you can generate a PDF with word cards, which you can print and use for playing. Those words are, obviously, drawn directly from these word lists.
 
-It also powers my [Dictionary Tool](https://pandaqi.com/tools/dictionary/). It's useful when you play one of my word games---like [Keebble](https://pandaqi.com/keebble)---to check _if something is a valid word_. You know, the thing that starts all lively discussions in Scrabble-like games :p
+It also powers my [Dictionary Tool](https://pandaqi.com/tools/dictionary/). It's useful when you play one of my word games---like the [Keebble Games](https://pandaqi.com/keebble-games/)---to check _if something is a valid word_. You know, the thing that starts all lively discussions in Scrabble-like games :p
 
 ## What is it?
 

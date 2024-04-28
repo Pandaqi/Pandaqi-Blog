@@ -10,6 +10,9 @@ pygmentsCodefences = true
 
 sectionPagesMenu = "main"
 
+[build]
+  noJSConfigInAssets = true
+
 [params]
     testOnlyCriticalStyle = false
 

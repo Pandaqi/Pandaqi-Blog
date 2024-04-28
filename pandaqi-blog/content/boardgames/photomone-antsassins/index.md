@@ -5,7 +5,7 @@ emoji: "🐜"
 thumbnail_media: "photomone_antsassins_header.webp"
 ---
 
-Welcome to my devlog for the game [Photomone: Antsassins](https://pandaqi.com/photomone-antsassins). As expected, it's a spin-off for my game [Photomone](https://pandaqi.com/photomone).
+Welcome to my devlog for the game [Photomone: Antsassins](/photomone-games/draw/photomone-antsassins). As expected, it's part of the [Photomone Games](/photomone-games/) project.
 
 While developing that game, I invented some "expansions", that quickly turned into completely separate ideas that should just be separate games. This was the first of them.
 

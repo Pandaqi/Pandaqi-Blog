@@ -1,10 +1,12 @@
+@use "./globals.scss" as g;
+
 // general code element styles
 $code-font-size: 0.66em;
 
 // NOTE: this is mostly done so we DON'T conflict the code styles for the highlighter (below)
 p, li {
     code {
-        font-family: JetBrainsMono;
+        font-family: g.$code-font-raw;
         font-size: $code-font-size;
         color: rgba(255, 220, 200, 1.0);
         background: rgba(255, 220, 200, 0.2);
@@ -34,7 +36,7 @@ p, li {
         padding: $code-font-size;
 
         code {
-            font-family: JetBrainsMono;
+            font-family: g.$code-font-raw;
         }
     }
 }

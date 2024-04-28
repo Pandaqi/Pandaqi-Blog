@@ -2,7 +2,7 @@
 title: "Mammoth Messages"
 date: 2024-03-26
 emoji: "🐘"
-thumbnail_media: "mammoth_messages.webp"
+thumbnail_media: "mammoth_messages_header.webp"
 ---
 
 Welcome to another devlog, this time for my simple party game [Mammoth Messages](https://pandaqi.com/mammoth-messages/). 

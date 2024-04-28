@@ -1,3 +1,46 @@
+@use "./globals.scss" as g;
+
+/* Main fonts (body, header) */
+@font-face {
+    font-family: g.$body-font-raw;
+    src: url('../fonts/Raleway-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: g.$body-font-raw;
+    src: url('../fonts/Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: g.$body-font-raw;
+    src: url('../fonts/Raleway-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: g.$header-font-raw;
+    src: url('../fonts/Dosis-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: g.$header-font-raw;
+    src: url('../fonts/Dosis-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Fonts (only JetBrains Mono for Highlighting) */
 @font-face {
     font-family: 'JetBrainsMono';

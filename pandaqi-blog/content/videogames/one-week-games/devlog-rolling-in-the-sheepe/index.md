@@ -1,13 +1,13 @@
 ---
-title: 'Rolling in the Sheepe'
-thumbnail_media: 'sheepe-header.webp'
+title: "Rolling in the Sheepe"
+thumbnail_media: "sheepe-header.webp"
 tags: ["devlog", "technical devlog"]
-date: 2022-01-28 14:00:00
+date: 2022-01-28
 emoji: "🐏"
 ---
 
 Welcome to my **devlog** for the game "Sheepe", otherwise known as
-["Rolling in the Sheepe"](https://pandaqi.com/rolling-in-the-sheepe)
+[Rolling in the Sheepe](https://pandaqi.com/rolling-in-the-sheepe/)
 
 The idea was simple: everyone is a sheep in a **random shape**, you can
 only **roll yourself**, and the first to reach the finish wins.
@@ -178,10 +178,6 @@ Let's think about this.
 -   Insight #1: They are *triangles*. Two triangles will share at most
     two points. If they share only a single point, I consider them
     "separate" and they shouldn't be merged.
-
-```{=html}
-<!-- -->
-```
 -   Insight #2: The points are *ordered* (clockwise in my case). If we
     find one point that matches, we only need to check the next point to
     see if we have a matching edge.
@@ -208,11 +204,8 @@ points were just created, in the slicing algorithm.
 In other words, if we find a matching point, we first check if it lies
 on the slicing vector. If so, ignore it and continue.
 
-There's a fairly standard algorithm for checking if a point is on a line
-segment:
-
-URL:
-<https://stackoverflow.com/questions/328107/how-can-you-determine-a-point-is-between-two-other-points-on-a-line-segment>
+Fortunately, there's a [fairly standard algorithm](https://stackoverflow.com/questions/328107/how-can-you-determine-a-point-is-between-two-other-points-on-a-line-segment) for checking if a point is on a line
+segment.
 
 ### The issue here
 

@@ -5,7 +5,7 @@ emoji: "🐜"
 thumbnail_media: "photomone_header.webp"
 ---
 
-Welcome to my devlog for the game [Photomone](https://pandaqi.com/photomone). It's a simple (party?) game I wanted to make for a while, but I could never quite figure out the details. That is, until I made some more games, updated my gaming website to be way more interactive, and realized what needed to happen.
+Welcome to my devlog for the game [Photomone](/photomone-games/draw/photomone/). It's a simple (party?) game I wanted to make for a while, but I could never quite figure out the details. That is, until I made some more games, updated my gaming website to be way more interactive, and realized what needed to happen.
 
 Let me take you on that journey!
 

@@ -5,7 +5,7 @@ emoji: "📔"
 thumbnail_media: "keebble_header.webp"
 ---
 
-Welcome to the devlog for my word-based party game [Keebble](https://pandaqi.com/keebble) This is a short article about the creation process: what problems I faced, how I solved them, and other interesting tidbits I wanted to share.
+Welcome to the devlog for my word-based party game [Keebble](/keebble-games/spell/keebble/) This is a short article about the creation process: what problems I faced, how I solved them, and other interesting tidbits I wanted to share.
 
 ## What's the idea?
 

@@ -5,9 +5,7 @@ emoji: "📗"
 thumbnail_media: "keebble_domino-header.webp"
 ---
 
-Welcome to my devlog for the game [Keebble Domino](https://pandaqi.com/keebble-domino).
-
-As expected, it's a variant (or spin-off) for [Keebble](https://pandaqi.com/keebble).
+Welcome to my devlog for the game [Keebble Domino](/keebble-games/spell/keebble-domino/). As expected, it's a part of the [Keebble Games](/keebble-games/) project.
 
 When thinking about how to make an improved Scrabble-like game, I got three ideas at the same time. The original version of Keebble was the easiest one to make. This was the hardest one to make, which is why I made it last.
 

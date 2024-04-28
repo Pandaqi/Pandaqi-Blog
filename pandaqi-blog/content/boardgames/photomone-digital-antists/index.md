@@ -5,7 +5,7 @@ emoji: "🐜"
 thumbnail_media: "photomone_digital_antists_header.webp"
 ---
 
-Welcome to my devlog for the game [Photomone: Digital Antists](https://pandaqi.com/photomone-digital-antists). As expected, it's a spin-off for my game [Photomone](https://pandaqi.com/photomone).
+Welcome to my devlog for the game [Photomone: Digital Antists](/photomone-games/draw/photomone-digital-antists/). As expected, it's part of the [Photomone Games](/photomone-games/) project.
 
 While developing that game, I invented some "expansions", that quickly turned into completely separate ideas that should just be separate games. This was the second of those.
 
