@@ -5,7 +5,7 @@ emoji: "📃"
 thumbnail_media: "foldigami_header.webp"
 ---
 
-Welcome to the devlog for my game [Foldigami](https://pandaqi.com/foldigami). Here, I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
+Welcome to the devlog for my game [Foldigami](https://pandaqi.com/waitless-games/play/foldigami/). Here, I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
 
 ## What's the idea?
 

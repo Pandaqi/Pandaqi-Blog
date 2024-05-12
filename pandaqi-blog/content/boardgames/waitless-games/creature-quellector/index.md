@@ -5,7 +5,7 @@ emoji: "🐉"
 thumbnail_media: "creature_quellector_header.webp"
 ---
 
-Welcome to the devlog for my game [Creature Quellector](https://pandaqi.com/creature-quellector). In this devlog, I'll briefly describe the process, problems I faced, how I solved them, why I made certain decisions, yada yada.
+Welcome to the devlog for my game [Creature Quellector](https://pandaqi.com/waitless-games/play/creature-quellector/). In this devlog, I'll briefly describe the process, problems I faced, how I solved them, why I made certain decisions, yada yada.
 
 And yes, I say "briefly". This devlog is nearly 6,000 words, but that's quite short for any development, and especially for one with as many bumps and sidetracks as this one.
 

@@ -5,11 +5,11 @@ emoji: "🐈"
 thumbnail_media: "nine_lives_header.webp"
 ---
 
-Welcome to the devlog for the game [Nine Lives](https://pandaqi.com/nine-lives). 
+Welcome to the devlog for the game [Nine Lives](https://pandaqi.com/the-outnumbered-series/count-to/nine-lives/). 
 
 The road towards this game is a little weird. It started as a different idea, which I mostly completed before starting work on this one. But _this_ idea felt a little simpler than _that_ idea, so I switched them around: Nine Lives is now the base game, and that other game was renamed to "Nine Lives: Math Meows" (a spin-off or variant).
 
-Why am I telling you this? Because it means that the first part of this devlog is actually part of that other [devlog for the spin-off](https://pandaqi.com/blog/boardgames/nine-lives-math-meows). (Where I explain the differences and how the separate ideas influenced each other and made ach other stronger.)
+Why am I telling you this? Because it means that the first part of this devlog is actually part of that other [devlog for the spin-off](https://pandaqi.com/blog/boardgames/the-outnumbered-series/nine-lives-math-meows/). (Where I explain the differences and how the separate ideas influenced each other and made ach other stronger.)
 
 This article will continue where that one left off. Don't worry, you don't need to read the other developer diary if you don't want---I'll start by summarizing the important points.
 

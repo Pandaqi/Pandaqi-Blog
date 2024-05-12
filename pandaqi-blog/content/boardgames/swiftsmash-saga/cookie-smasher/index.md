@@ -5,7 +5,7 @@ emoji: "🍪"
 thumbnail_media: "cookie_smasher_header.webp"
 ---
 
-Welcome to the devlog for my game [Cookie Smasher](https://pandaqi.com/cookie-smasher). I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
+Welcome to the devlog for my game [Cookie Smasher](https://pandaqi.com/swiftsmash-saga/tap/cookie-smasher/). I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
 
 ## What's the idea?
 

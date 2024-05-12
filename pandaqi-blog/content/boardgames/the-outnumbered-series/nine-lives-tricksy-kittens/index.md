@@ -6,13 +6,13 @@ thumbnail_media: "nine_lives_tricksy_kittens_header.webp"
 ---
 
 
-Welcome to the devlog for [Nine Lives: Tricksy Kittens](https://pandaqi.com/nine-lives-tricksy-kittens). As expected, it's a spinoff for [Nine Lives](https://pandaqi.com/nine-lives).
+Welcome to the devlog for [Nine Lives: Tricksy Kittens](https://pandaqi.com/the-outumbered-series/count-to/nine-lives-tricksy-kittens/). As expected, it's a spinoff for [Nine Lives](https://pandaqi.com/the-outnumbered-series/count-to/nine-lives/).
 
 Interestingly, though, this was actually the first seed of the idea. A trick-taking game where everyone would lose a life except the winner of the trick.
 
 I didn't immediately see how to turn it into a game with more variety/depth, while I _did_ see two other implementations that immediately felt fun to play. That's why I made the "base game" and the first spinoff first.
 
-In fact, a large part of the development process for these games can be found in the corresponding devlogs: [Nine Lives (Dev Diary)](https://pandaqi.com/blog/boardgames/nine-lives) and [Nine Lives: Math Meows (Dev Diary)](https://pandaqi.com/blog/boardgames/nine-lives-math-meows).
+In fact, a large part of the development process for these games can be found in the corresponding devlogs: [Nine Lives (Dev Diary)](https://pandaqi.com/blog/boardgames/the-outnumbered-series/nine-lives/) and [Nine Lives: Math Meows (Dev Diary)](https://pandaqi.com/blog/boardgames/the-outnumbered-series/nine-lives-math-meows/).
 
 This article picks up where we left off. I'll briefly re-explain the core mechanic of the Nine Lives series, and then continue talking about how this specific version came to be. Hopefully it's interesting or educational to read!
 

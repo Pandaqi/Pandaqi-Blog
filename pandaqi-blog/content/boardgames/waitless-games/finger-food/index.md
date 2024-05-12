@@ -5,11 +5,11 @@ emoji: "🖐️"
 thumbnail_media: "finger_food_header.webp"
 ---
 
-Welcome to the devlog for my game [Finger Food](https://pandaqi.com/finger-food). I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
+Welcome to the devlog for my game [Finger Food](https://pandaqi.com/waitless-games/play/finger-food/). I'll (briefly) explain the design process for the game. Where did the idea come from? How did I develop it? What interesting problems did I have to solve?
 
 ## What's the idea?
 
-Some time ago, I made the game [Foldigami](https://pandaqi.com/foldigami). In the devlog for that game, I narrate this process in more detail, but here's the gist.
+Some time ago, I made the game [Foldigami](https://pandaqi.com/waitless-games/play/foldigami/). In the devlog for that game, I narrate this process in more detail, but here's the gist.
 
 I wanted to make a _true_ One Paper Game. One that didn't even require a pen(cil), or reading a separate sheet of rules, or _anything_.
 

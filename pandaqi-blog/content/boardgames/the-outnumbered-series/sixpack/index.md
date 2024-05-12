@@ -5,7 +5,7 @@ emoji: "🃏"
 thumbnail_media: "sixpack_header.webp"
 ---
 
-Welcome to the devlog for my game [Sixpack](https://pandaqi.com/sixpack).
+Welcome to the devlog for my game [Sixpack](https://pandaqi.com/the-outnumbered-series/count-to/sixpack/).
 
 This started as a short article on my Dutch, personal blog. I had just played the game "Take 5" and wanted to write about the simple ways in which that game is _really good_. When done, I thought: "hmm, why don't I use these key tips I mentioned to quickly create a new game? To show that they work?"
 

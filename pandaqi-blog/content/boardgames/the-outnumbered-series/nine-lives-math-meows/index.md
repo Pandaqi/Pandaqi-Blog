@@ -5,7 +5,7 @@ emoji: "🐈"
 thumbnail_media: "nine_lives_math_meows_header.webp"
 ---
 
-Welcome to the devlog ("developer diary") for my game [Nine Lives: Math Meows](https://pandaqi.com/nine-lives-math-meows).
+Welcome to the devlog ("developer diary") for my game [Nine Lives: Math Meows](https://pandaqi.com/the-outnumbered-series/nine-lives-math-meows/).
 
 This game slipped through the cracks. I worked on it a while in my head---with random thoughts and ideas popping up---before I actually "properly" started the project. This devlog might therefore omit some details or make some time jumps, but I'll try to give a good summary of what I remember about the development process.
 

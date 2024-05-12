@@ -3,7 +3,6 @@
 {{ $dot.Scratch.Set "breadcrumb" slice }}
 
 {{ $url := .RelPermalink }}
-{{ $.Scratch.Add "path" .Site.BaseURL }}
 
 {{ $.Scratch.Add "breadcrumb" (slice (dict "url" .Site.BaseURL "name" "home" "position" 1 )) }}
   {{ range $index, $element := split $url "/" }}
