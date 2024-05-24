@@ -1,8 +1,7 @@
 ---
-draft: true
 title: 'How to deploy a Phaser game as an executable'
 tags: ["tutorial"]
-date: 2023-01-01 12:09:32
+date: 2024-07-01
 ---
 
 You have created an HTML5 game. This tutorial mentions Phaser because it's the most-used web game framework, but the process below works for _any_ HTML5 game.
@@ -12,6 +11,8 @@ And now you want to publish and deploy the game for _desktop computers_.
 In my case, I simply like having executable versions of all games. Some HTML5 games I made 10 years ago don't work anymore because of slight changes in browsers, which is sad. Keeping executables means your game will be playable for a much longer time.
 
 But the reason isn't important. It's about how to do it! Let's start.
+
+_This guide was written in June of 2023. In the future, I hope to try the Tauri software for this process as well and report how it works._
 
 > If you want to build for _mobile_ instead, check out my other tutorial: [How to deploy a Phaser game for mobile](../deploy-phaser-game-for-mobile/). The start of both tutorials is very similar, then it differentiates.
 
