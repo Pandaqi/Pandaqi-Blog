@@ -10,7 +10,7 @@ And now you want to publish and deploy the game for **Android**, probably includ
 
 I was in the same position. Thus I looked for the easiest way to do it and will now teach that to you!
 
-_This guide was written in June of 2024, shortly after major updates to all crucial components. I expect it to be valid for a long time, but be cautious anyway._
+_This guide was written in June of 2024, shortly after major updates to all crucial components. I expect it to be valid for a long time, but be cautious anyway. CapacitorJS also seems a promising alternative and might be evaluated in the future._
 
 > This should also work for iOS, but you need an Apple device for that. I don't have one, so I can't test it or comment on it further.
 
@@ -546,6 +546,24 @@ Apparently, "virtualization" is something that can be enabled/disabled in your B
 
 Once I did that, stuff worked. I was actually surprised by this.
 
+### Possible Issue: package names
+
+Each game requires its own unique package name, preferably something that fits and is easy to recognize.
+
+As stated, you had to give the package name when creating the Cordova project in the first place. So ... how can you change it later? How can you give each app a unique ID when they all use that same Cordova project?
+
+**Not** by renaming it in `config.xml` (or anywhere else). No no! You need to replace it _everywhere_ throughout the entire cordova project AND rename the java folder that contains the root file. Otherwise the entire thing _breaks_ and refuses to do anything.
+
+But I don't recommend doing that too, as it's a lot of work and error prone.
+
+There's a much simpler solution: add `android-packageName="com.whatever.name"` to the main tag in `config.xml`. The tag that also specifies the original package name at the start.
+
+This means you don't need to change anything else. You can still use a unique config file per game and that's all. But it will export the game with the right details behind the scenes.
+
+{{% remark %}}
+And the Play Store is _very_ particular about package names. If you accidentally upload a first version with the wrong one, you can _never_ remove it again, only deactivate it. So now your dashboard is forever cluttered with minor mistakes from the past. Not speaking from experience, not at all.
+{{% /remark %}}
+
 ### Possible Issue: No Kotlin
 
 Remember when I said the docs for the AdMob plugin were great ... with some exceptions? This is one of them. 
@@ -591,6 +609,61 @@ To solve this, add this exact tag to the head of your `index.html`.
 {{$ /highlight %}}
 
 If this still doesn't work, just remove the _entire_ Content-Security-Policy tag for now. This will allow all assets and is the easiest way to just get a game up and running for now. For a simple game, the extra security it brings is not needed.
+
+### Possible Issue: Delayed Sounds
+
+This is a general issue with web audio and how browsers handle it. Processing and displaying audio is far more complex than people think. A lot can go wrong, it can be resource intensive, and support for it has been more flaky than it has been for graphics/video.
+
+When I exported my Phaser game, the sound was severely delayed on my phone. I'm talking about 0.5-1.0 second after the sound was _supposed_ to trigger. (And yes, it played instantly on my computer.)
+
+I wasn't sure if this was just my terrible hardware (as usual) or a persistent issue, because I could not find _any_ mention online of this specific issue. Only some more generic audio issues with Phaser/Cordova with completely different origins/solutions.
+
+There are two solutions here: use the Cordova Media plugin instead (to natively play audio), or use the Howler.js library (which many seem to use by default for audio in any web project)
+
+I've mentioned that I want projects to be platform-agnostic, so I want the game to be entirely self-contained and not rely on _any_ Cordova functionality or bindings. So I chose the second option and simply rewrote the few Phaser audio calls to howler.
+
+This was very _easy_ and _fast_, and I immediately liked this HowlerJS library.
+
+It did not solve the problem at all, however. I could not find a cause for this and it only happens on some (mobile, cheaper) devices, so I had to leave this alone for now.
+
+### A tip: icon and splash screen
+
+This is another very crucial aspect---delivering the right icon and boot image for your app---that is handled extremely poorly in the docs.
+
+It's actually quite simple, once you figured it out.
+
+As usual, all of this code is to be added in the `config.xml` file.
+
+The following code sets the icon for all sizes and platforms.
+
+{{% highlight xml %}}
+<icon src="path/to/icon.png">
+{{% /highlight %}}
+
+The following code sets the splash screen to something else (instead of the default cordova box icon).
+
+{{% highlight xml %}}
+<preference name="SplashScreenAnimatedIcon" value="path/to/icon.png" />
+{{% /highlight %}}
+
+Of course, you can set different icons for different sizes, or apply something more advanced (such as the multi-layered adaptive icons that Android wants you to make). But I like things simple and clean and I don't care about that, so this was enough for me.
+
+**Note** that the path to this icon is from the **root** of the project, _not_ that `www` folder that contains your actual game. As such, it's recommended to create a `res` or `resources` folder at the root and put all those extra assets in that.
+
+### A tip: version numbering
+
+The Play/App Store require that every new update to your app uses a _higher_ version number than the previous one. This is baked into the app file itself and must, thus, be manually updated and set accordingly before building it in the first place.
+
+This, again, can be done in the `config.xml`.
+
+The default one should already contain a `version="1.0.0"` line. You might know, however, that app versioning uses _integers_ (and not the dot-format of other software).
+
+But don't worry! Cordova _automatically_ converts this version to an integer format. More specifically, it does `10000 * first number + 100 * second number + third number`
+
+For example, if you don't change anything, your first release will have version number 10000. If you then change it to `1.1.0`, it will be 10100.
+
+So all you need to do, whenever you publically release a new version of your game, is ensure you bumped this one version property, in this one place, to something higher. It should all work out properly then.
+
 
 ## Conclusion
 

@@ -29,7 +29,7 @@ It always needs to have at least one document (it will tell you). So create one 
 
 You should already have a functional node project (with a ``package.json`` file).
 
-Type ``npm install firebase`` or ``yarn add firebase``
+Type `npm install firebase` or `yarn add firebase`
 
 Wait a bit. And congratulations: you have firebase.
 
@@ -232,9 +232,9 @@ createDataIfNeeded()
 }
 {{< /highlight >}}
 
-Unfortunately, you do not get the new document back after a call like setDoc. (Most Firebase calls return a promise that resolves or not.) So our ``docResult`` will still think it doesn't exist after we created it.
+Unfortunately, you do not get the new document back after a call like setDoc. (Most Firebase calls return a promise that resolves or not.) So our `docResult` will still think it doesn't exist after we created it.
 
-To simplify things, I go around this by keeping the latest known score on the Leardboard object itself: ``this.score``. You can also just poll the collection again to get the entry as it is now.
+To simplify things, I go around this by keeping the latest known score on the Leardboard object itself: `this.score`. You can also just poll the collection again to get the entry as it is now.
 
 ### Updating our score
 
@@ -274,7 +274,7 @@ But of course, highscores are only fun when you can compare them with others.
 By now, you hopefully understand the ideas behind Firebase and how to approach problems like these.
 
 * It uses functions for _everything_, even passing parameters to other functions.
-* The function to get multiple documents is of course ``getDocs()``
+* The function to get multiple documents is of course `getDocs()`
 * It will be an async operation that might fail
 * And you should not use the end result directly, but put it in some other structure you can use.
 
@@ -313,13 +313,13 @@ private fetchLeaderboard()
 
 As I said, I create this Leaderboard at the start of the game. So it immediately checks the connection, sets it up, and creates a document if it's a new player.
 
-Whenever the level ends, it calls ``submitScore()`` with the new score.
+Whenever the level ends, it calls `submitScore()` with the new score.
 
-Whenever the user presses the leaderboard button, it calls ``fetchLeaderboard()`` and, once done, loops through the list to display those scores.
+Whenever the user presses the leaderboard button, it calls `fetchLeaderboard()` and, once done, loops through the list to display those scores.
 
-You can play around with efficiency. ``getDocs`` can read from cache, for example.
+You can play around with efficiency. `getDocs()` can read from cache, for example.
 
-You should handle actual errors, instead of just displaying them. If the firebase database for some reason just doesn't work, it shouldn't crash your game. Perhaps set some variable ``active`` that is only true if things are working. And if not active, immediately return out of any function calls.
+You should handle actual errors, instead of just displaying them. If the firebase database for some reason just doesn't work, it shouldn't crash your game. Perhaps set some variable `active` that is only true if things are working. And if not active, immediately return out of any function calls.
 
 Besides scores, you can obviously save other data. Usernames, timestamps, statistics like "time played" or "powerups grabbed".
 
