@@ -29,7 +29,7 @@ That's how the throne card was born. Each game, you pick a random throne card (f
 
 {{% example %}}
 When prototyping Kingseat, I realized players needed more information. A great solution was to alternate voting rounds between _public_ and _secret_. Well, guess what: that's one of the throne cards now.
-{{% /remark %}}
+{{% /example %}}
 
 For these cards, I needed ...
 

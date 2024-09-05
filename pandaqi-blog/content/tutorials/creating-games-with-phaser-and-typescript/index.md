@@ -239,7 +239,7 @@ When you want to use this elsewhere, import it at the top of that other file. If
 
 {{% highlight Javascript %}}
 import obj from "./obj"
-{{% /highlight }}
+{{% /highlight %}}
 
 Notice that the paths start from the current folder (`.`) and do *not* include the extension (`.ts`).
 

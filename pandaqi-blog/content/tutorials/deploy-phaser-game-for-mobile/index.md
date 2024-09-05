@@ -330,7 +330,7 @@ For games, it's common to lock the screen orientation. (It's unlikely your game 
 
 Add it:
 
-{{% highlught bash %}}
+{{% highlight bash %}}
 cordova plugin add cordova-plugin-screen-orientation
 {{% /highlight %}}
 
@@ -578,7 +578,7 @@ Add these three lines to your `config.xml`:
 <platform name="android">
     <preference name="GradlePluginKotlinEnabled" value="true" />
 </platform>
-{{% /highlight }}
+{{% /highlight %}}
 
 That's it. This was the difference between _nothing_ happening and everything working flawlessly, at least for me.
 
@@ -606,7 +606,7 @@ To solve this, add this exact tag to the head of your `index.html`.
 
 {{% highlight html %}}
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline';  media-src *; img-src 'self' data: content: blob:;">
-{{$ /highlight %}}
+{{% /highlight %}}
 
 If this still doesn't work, just remove the _entire_ Content-Security-Policy tag for now. This will allow all assets and is the easiest way to just get a game up and running for now. For a simple game, the extra security it brings is not needed.
 

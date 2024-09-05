@@ -244,7 +244,7 @@ Remove it by adding this line to your `main.js`, before you load the `index.html
 
 {{% highlight Javascript %}}
 win.setMenuBarVisibility(false);
-{{% /higlight %}}
+{{% /highlight %}}
 
 ### Fullscreen
 

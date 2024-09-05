@@ -95,7 +95,7 @@ I've also planned a much better home page and structure for a while, but I just 
 
 I'm too busy making actual games _and_ plugging holes in the codebase running it :p So far, there's always been a list saying "but I _need_ this functionality for project A", which obviously takes precedence over "might be nice to have a prettier homepage"
 
-But this list is shrinking, especially once my system can do anything that PIXI.js can do. At some point, as I chip away at the mountain of tasks, thing will get done.
+But this list is shrinking, especially once my system can do anything that PIXI.js can do. At some point, as I chip away at the mountain of tasks, things will get done.
 
 Until the next update,
 

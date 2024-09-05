@@ -1,6 +1,6 @@
 ---
 title: 'The Magic of Decision Trees'
-date: 2024-06-06 10:26:32
+date: 2025-06-06 10:26:32
 tags: ["update"]
 emoji: "🌲"
 ---
