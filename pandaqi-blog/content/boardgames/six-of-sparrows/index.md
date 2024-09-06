@@ -120,13 +120,65 @@ No, the most important part of this game---pretty much the _only_ part---is the 
 
 That doesn't mean the bids aren't scored. They are properly calculated by the code! It's just behind the scenes, and I only track that for the simulation. This was more work than I liked, but I had to be sure that the bids were actually _achievable_.
 
+More specifically, for every round the computer randomly plays,
+
+* I try _every possible bid card_ for _every player_. (So it looks at their individual hand + open hand on table.)
+* And register if that bid would be a success and score points, or not.
+* Those probabilities are then converted to a "suggested value" (for the card) between 20 and 200. (Something with near 100% probability of being a success, only gives 20 points. Something with near 0% probability gives 200 points.)
+
 What were the results?
 
-@TODO: CONTINUE WRITING AND FINISH
+For the most part, the bids were **fine**. (Achievable, a good spread of easy ones and really hard ones.) 
+
+There were some outliers, though.
+
+* I had three _flushes_: "4 cards of the same suit", "6 cards of the same suit", "8 cards of the same suit". Surprisingly, the first one is very likely to occur, but the other two very quickly went to a probability of almost 0. I was sure this was a bug, but it wasn't. The probability of that simply becomes MUCH lower with every suit you add.
+  * **Solution?** I changed those numbers to "4, 5 and 6". Now those cards have values of $20, $100 and $180. A much nicer spread.
+* "My entire hand is the same suit" then obviously has the same problem, but worse, because now all 6 cards ... of the same suit ... must be in your hand alone. This happened 0 times in 10,000 simulations :p
+  * **Solution?** I changed it to "Every suit from the table is present in my hand." It's a more interesting bid anyway, and it has a probability of 51%.
+* Another more "experimental" bid I invented had the same issue: "No number from the table is present in your hand." This _can_ occur, but it only has a 3% chance, which is a bit too low to be playable. 
+  * **Solution?** I changed it a slight variation that's more likely: "Your hand contains no duplicate numbers." It's along the same lines, but this has 23% success.
+* The "pair" bids are so likely that they're basically a guarantee. (The "one pair" bid _is_ a guarantee, because you compare 12 cards to 10 numbers. The _two pair_ bid is not, because that one pair might actually be 3 or 4 cards. But it's close.) 
+  * **Solution?** Nothing! I decided to just keep this. They score very little and now it's a _choice_ for you, as the player, whether you want to play it really safe and gather points slowly, or try something more. Only one person can grab that bid anyway.
+  * These bids are so core to poker/games like this, that it feels weird to leave them out. I'm also lacking in good low bids (<$50) without them.
+  * Additionally, the bonus bid from the expansion ("I will have none of the possible bids") works better when there are sometimes one or two bids you will accidentally complete by the end.
+* There are now only four bids that are so hard they give $200 points. That's fine to me, as intelligent players are more likely to complete them _and_ it's a really nice moment if you do.
+  * The **hardest bid** in the game is 2 Quatro: two numbers that appear 4 times (the maximum times possible). I expected it to be hard, but not to be the _hardest_. Interesting.
+
+There are a few bids that are interactive (you compare with other players). As expected, those have a 50% success, which was a nice confirmation that the simulation was doing its job. (In completely random play + random dealing of cards, it _should_ be a 50/50 if you have the highest card of all players, for example.)
+
+Overall, the average probability of success is now ~38%. This is with completely random, stupid play, not even looking at your own cards or the table. As such, I expect this to grow comfortably above 50% (but never reach 100% success), which is the area we want to be in.
+
+I did change the _penalty_ for failing a bid, though. Before, the penalty was just the value of the bid as _negative points_. But ...
+
+* Bids are hard enough to complete that this means players sometimes _lose more points on average_ than they gain.
+* It punishes you far more severely for failing a risky contract, which is the opposite of what we want. We want players to try those risky contracts, gamble on them, and to nudge them there we need to actually have a lower penalty for those.
+
+Instead of inventing some crazy rules or formula, I just stuck to simple and made the penalty a _constant low number_: -10 points. That's only terrible if you never take risks and only do really easy bids. Otherwise, it's a slight setback, but players on average always _gain more points_ than they lose. 
+
+{{% remark %}}
+Remember that bid values are divided by when you made that bid. In the worst case scenario, you take something like a $80 bid with 6 cards in your hand, but that still scores you 80 / 6 = 12 points. Slightly more than the penalty.
+{{% /remark %}}
+
+With all of that done, the bid cards now have a nice spread of rewards below 100 and above 100. You usually have a few options and can try something safer or gamble on something riskier. All bids are certainly possible, even the hardest ones.
+
+I decided this was finetuned enough now.
+
+### Final Addition
+
+After creating that simulation, seeing the game printed and played, I had one final thought that I wanted to put into the game: combining with _another player_ to meet your bid, instead of the table cards.
+
+By how players bid and how they react, you can try to deduce the cards they're likely to have. As such, when everything goes wrong for you or your cards feel garbage, this is an extra way out---one that's interesting, tactical, and risky on its own.
+
+I decided to make this a third "BONUS BID" instead of creating an entire new variant/expansion for it. So, when you grab your original bid, that's when you _may_ grab the "Match Together" bid (if still available). You basically say "my cards aren't great" and now have to figure out with whom you must combine to get your bid anyway.
+
+My spritesheet with bid icons, however, was capped at 32. (This keeps the filesize small and makes it faster for computers to load. I generally cap all my assets to 16 or 32 at most in one spritesheet. Also as a general rule to force myself to _keep things simple_.)
+
+I decided to replace the "One Pair" bid, the least interesting or useful of all, with this bonus bid icon. (We have enough near-guarantee bids besides it.)
 
 ### Final Material
 
-I made two screenshots of the final material to showcase the 3 different card types.
+I made two screenshots of the final material to showcase the 3 different card types. (These screenshots were made BEFORE I did the simulation, because I am impatient and my brain is a hyperactive mess and sometimes I do things in a weird order.)
 
 ![You can see three of the four suits here; icons arranged in the usual grid. Just after finishing this, I found an image of a different set of cards that arranged its icons in a much more freeflowing/experimental way. Too late for this project, but I'll probably use that for a later card game.](six_of_sparrows_final_1.webp)
 

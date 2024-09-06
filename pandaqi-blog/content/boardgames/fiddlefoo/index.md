@@ -146,6 +146,25 @@ Really, I'm trying to find _anything_ else to mention here, make the devlog a bi
 
 The game looks pretty good, it's simple and minimal but works, and I don't know what else to say.
 
+### Simulation
+
+Oh, I do have one final thing to say. When simulating the game (through the interactive example in the rulebook), these were the results.
+
+* **Average #turns per game is ~18.5**. (This was 22 at first, when I'd forgotten to code that cards thrown at you actually, you know, _switch hands_.)
+* **Percentage turns where cards are given is ~92%**. This means that _most_ turns will allow someone to give at least one card away, but not all of them. That's a good balance. (This was only 75% at first, when I still had that bug I just mentioned.)
+  * This is interesting, because it means that actually _giving the cards_ somehow makes you more likely to give them away later too, but _also_ makes the game _shorter_.
+  * Anyway, it's all good news for game balance.
+* **Average #cards given is 2.8**. So, in a turn where somebody receives cards, they receive 3 on average. This feels a bit high, but then again, my simulation plays _randomly_ and players just give away _everything they can_. In a real game, you'll likely play smarter (creating smaller ranges) and not give away everything (to save a good card for your own next turn)
+* **Percentage of "safe" turns (distance > 3) is 5%.** This is, again, on the low side. But these computer players aren't trying to do achieve this special case at all, so then you're unlikely to manage it. Even so, 1 in 20 turns being "safe", means that even in random play it will happen once in an average game.
+
+There's some very basic intelligence in those computer players, such as "if you can give away LOADS of cards based on NUMBER, do that, instead of giving 1 based on distance". But it's extremely rudimentary and really doesn't influence these statistics much.
+
+On the interactive example, I "pre-play" 10--20 moves, just to get more varied situations and make the board look more interesting. The simulation starts, as it should, with the 2x2 starting board and every player 8 cards. 
+
+{{% remark %}}
+I simply have a single variable I can set to `true` or `false` to turn the interactive example into a simulation (play 10,000 games; give no feedback or visuals of course). Otherwise, it's usually all exactly the same code.
+{{% /remark %}}
+
 ## Conclusion
 
 Another game done! Hopefully one that brings some people joy and that accomplished some of my original vision. (Which was to bring the original idea of _Cabanga!_, which is quite good, into different dimensions and game design directions. Add some extra strategy and variety, and make the game a little "meatier".)
