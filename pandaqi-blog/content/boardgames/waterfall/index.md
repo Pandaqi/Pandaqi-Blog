@@ -306,6 +306,36 @@ This is an example of something that is obvious once you've seen it before you, 
 
 Anyway, with that done, we could finally playtest the game with _human_ players.
 
-## Playtesting & Polishing
+## Just kidding!
 
-@TODO: write down playtesting results + conclusion
+Erm, instead of doing that, I took a break of 6+ months before finishing _Raging Rapids_ (the "original idea"). And then I completely forgot to update this devlog.
+
+Luckily, it was mostly done anyway. The sketches of material are all still correct, the game hasn't changed from what I've said, I just had to do the boring (but necessary) polishing and finetuning. 
+
+Such as shortening actions for _Raging Rapids_ so they fit on the tile in a large font size. For some reason, I'd written my original ideas with way too many words.
+
+Anyway, let's jump to the conclusion then.
+
+## Conclusion
+
+Ironically, the "simplified" version has two more rules to learn. Because it doesn't have text _on the cards_, you actually have to learn that beforehand. Which technically makes it "harder", but not really, because _Raging Rapids_ is harder to play when you have to constantly read what a tile does.
+
+Most of all, the simplified version is just the better game. More interesting, prettier, a better execution of the ideas, and battle-tested by my simulation and playing against myself.
+
+Though it was a struggle, I'm glad I decided to "bite the bullet" and create that entirely separate simplified version. It created a better game as a result, and I always have the _other_ execution/interpretation in _Raging Rapids_. For people who are fine reading text on tiles and want something that potentially gets even more strategic and long.
+
+This has become a bit of a pattern during this period in my "game design journey". Each game seemed to come in two. A pair of "simple but more shallow" and "harder but more strategic". I'm fine with experimenting with that and delivering two standalone games that way. It creates an experience for more types of players, it allows me to try out more ideas or approaches, and it of course looks good to have more games on your portfolio :p
+
+But---notice I write this in past tense, as I finish this devlog far too late---I don't do that anymore. I think I've grown past that and can now design _single_ games that do exactly what I intended, and no more. Without overcomplicating it, without leading myself astray, without splitting the game into _two_ when a clever rule change could achieve the same thing in the same game.
+
+What I _have_ started doing recently, a lot, is creating collections of games. But those are around a very general core mechanic that is present in all of them, instead of taking a more _specific_ game idea into two (or three, or five) directions. 
+
+It's interesting to see how my games and execution naturally develop. 
+
+These games were pretty much the start of that journey; one of the first times I made a clear "pair of games". If you ask me, the base game (Waterfall; the "simplified version") is _really solid_ and I wouldn't mind busting it out with any group. The other version (Waterfall: Raging Rapids) really feels more like a gamer's game that you might try once because you're interested, but that's that.
+
+But I'll let the world decide. I finished them both, published them both, and now this project is done.
+
+Until the next devlog,
+
+Pandaqi
