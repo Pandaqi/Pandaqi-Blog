@@ -84,6 +84,23 @@ As stated, the rules for the game and the code to generate the cards wasn't note
 
 This ends up generating a nice list of cards with simple ways in which they score, distributed over 4 colors.
 
+### Simulation
+
+The rules for this game have an interactive example that generates a random turn and shows you how that would play out. Whenever I do that, I merely need to flip a switch and it can _simulate_ 100,000 such games and give me some statistics.
+
+They're always interesting to share, I think. (And learn from, if I see issues.)
+
+* **% games ended by score:** 90%. (This means that 10% of games continue until the deck is simply empty, others are won by the player who got 10 points before that moment.)
+* **Average score by the end:** 6 points. (Averaging all players, when the game ends, they have 6 points each.)
+* **# of "pointing cycles" per round:** 1.5. (This means that once every two rounds, a pile will need to be split up and pointed at again. On average. This is very doable and not overwhelming.)
+* **# of rounds per game:** 5.5--6. (This is perhaps a bit on the low side, but remember that this simulates for player counts 2 to 6. And yes, with a lot of players, the deck will empty really quickly. I could add a _few more_ to the standard material. But my general vision is that players just add expansions when they want a longer/more complex game. If I make the base game already quite heavy on material, well, then the expansions will have nowhere left to go and will be _too much_.)
+
+This is all completely random play. The computer isn't smart, the computer doesn't care, it just points randomly. In a real game, players will probably win by score 100% of the time, and the average score will be higher.
+
+Because the _entire game_ is about pointing at the exact pile you want, and not getting any other, the simulation shows a large fluctuation. If the computer happens to play smart, then it indeed reaches much higher scores and quicker games. If the computer happens to play dumb, then the average final score (over ~100 games, when I do a quick test run) might even be _negative_ :p
+
+As such, I had to bump the number of repeated simulations to a _really high value_ this time to get accurate results (on average). All in all, I think the interactive example ended up very clear and a very good test of the game's general balance, which it passed.
+
 ### Visuals
 
 As stated in all the other devlogs for _SwiftSmash Saga_, the theme here is really _simplicity_. I didn't want to add any more texture or detail to these cards. I really wanted them to just be a solid color with simple flat icons.

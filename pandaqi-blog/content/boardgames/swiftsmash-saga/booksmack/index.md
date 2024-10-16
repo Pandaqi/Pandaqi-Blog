@@ -107,6 +107,17 @@ Below is the final material. I purposely exported a PDF with _all_ expansions (s
 Because this game is all about LETTERS and GLYPHS, the graphics needed for all the material ... are just two simple images. Background + Box for action text. Nothing else. This is extremely minimal compared to all other games I've made, and a reason why this development felt effortless and quick. In fact, I am tempted to use this more often from now on---just use more text or the pretty font I've chosen for an interesting card, instead of drawing all these graphics and icons :p
 {{% /remark %}}
 
+### Simulation
+
+Here are the quick results from the _simulation_ of this game. (When I create an interactive example for a game, which you can access in the rules, I can easily flip a switch and have it simulate 100,000 games and give me some statistics.)
+
+* **Game Length** (average): 9--10 rounds
+* **Tie Probability** (average): once every 3 games. (This is the chance that both the lowercase and uppercase version of a letter is played.)
+
+The game length is perhaps a bit high, and the tie probability a bit low. But these are averages for all player counts, where there are obviously huge differences. (With more players, the tie probability shoots up, and games are much shorter.)
+
+Also, rounds are _extremely fast_, so games are _extremely fast_, which means I don't mind. When adding expansions, you certainly don't have to add them all at once, and you might even leave out random cards if you think the game takes too long. In that sense, this game is extremely flexible and resistant to any customization you might want to do.
+
 ## Conclusion
 
 Okay, so, there's this person inside of me---inside of every creative, I imagine---who wants every project to be a _masterpiece_. So when I looked at this game in its final form, I was like ...

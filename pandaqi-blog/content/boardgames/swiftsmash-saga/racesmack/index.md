@@ -127,7 +127,46 @@ It's a good way to know probabilities, averages, game duration, etcetera. It doe
 
 Anyway, what were the results?
 
-@TODO: Summarize results of simulation + tweaks to improve
+* With my current distribution of cards (percentage regular, percentage rule), it rarely happens that a round only has 1 or even 0 regular cards. Which is good. **The rule cards shouldn't overcrowd the others.**
+* I realized that it _can_ happen that a round has _only rule cards_. **Which means there's nothing to smack!** I needed a simple and clever rule to handle that situation. 
+  * Solution? This was really a different problem: the lack of a rule for when NOTHING is correct.
+  * After throwing out several ideas, the simplest solution was to say "tap your own card".
+  * It's an extremely simple rule, easy to remember, but also applicable _whatever_ the cards in the round are. 
+* It showed that the **likelihood of most/all cards being "correct" is a bit too high**. In hindsight, this is obvious. If you must smack the card with the shape that appears _most often_ ... well, that shape is likely to be on most cards, is it not?
+  * Solution? This didn't actually need a solution. There's still a good percentage of rounds where not _all_ cards are correct, and some where _none_ are correct (as discussed above). Additionally, the flipside of this rule ("smack the thing that occurs least often") is already a Rule Card that appears a lot.
+  * And even so, I want the game to lean a bit more towards being friendly to the players. It's more fun if you score 1 card _most of the time_, than if it's _really hard_ to score anything at all and you keep losing Race cards.
+* **The finish requirements were mostly fine.** There was quite some variation here, but on average the game was decided by someone finishing 75% of the time. Remember that these computer players play randomly, which means they don't make any smart progress towards their finish. If a random stumbling player can end up reaching their specific finish 75% of the time, I think smart humans will be able to do it near 100% of the time.
+  * Solution? I _might_ consider a "default finish". If you have no finish card, then you win by having 15 cards of any kind. But I didn't feel this extra rule was truly needed, and it complicated the "objective".
+  * Solution Really? I decided to do something different that kills two birds with one stone. **"If the deck runs out, whoever has the most cards wins."**
+  * This covers the rare case where nobody finishes before the deck runs out. It also emulates the same idea as above: if you have no Finish Card, you can win the game by just having the most cards in your Race.
+* **It revealed that winning a Rule/Finish card is a bit _meh_.** Because you can only have one in your race anyway, and once you've picked one you'll likely want to stick with it, so that just devalued playing/winning such a card a lot.
+  * Solution? I simply removed that rule. Simpler is better! You are allowed as many Finish Cards as you want, but only the _one with the highest number_ actually applies.
+  * This combines with the change above to place some value on just "having a lot of cards" (by winning a lot), while keeping a slight tension/decision because you might not want a higher-numbered finish to replace the one you're currently going for.
+  * Well, at first I wanted to make this a _decision_. Any cards scored were optional and could be discarded. But ... it's actually more interesting if we _don't_ do that. You might get a situation where you don't _want_ to be the first player, because it'd win you a card that ruins your Race.
+
+As usual, I made all these changes, tweaked some numbers, and watched the simulation stabilize around the values you typically want. Also as usual, this is no guarantee of anything, it's just random computer players doing random moves, and a "perfectly balanced game" isn't necessarily fun.
+
+But as the list above demonstrates, these simulations simply catch errors and potential issues that might never crop up in my own playtesting. (Because I can't playtest my game 10,000 times with different players and stuff :p)
+
+Now some final, hard statistics / numbers!
+
+* **Average # correct cards per round**: 1.6. (Likely more than one, but rarely "all cards correct".)
+* **% Games won by finishing**: 96% (With actual intelligent players, likely 100%.)
+* **% Rounds with NO correct cards**: 15%. (Again, it will happen once or twice, but not all the time.)
+* **Average # rounds per game**: 8 (Bit short for some player counts, a bit long for others, but that's why it's a nice average.)
+* **% of rounds where special rules matter**: 75% (A _bit_ high, but is it an issue?)
+
+The changes I made (mostly to keeping Finish Cards instead of replacing them) really stabilized the game. More likely to finish, less likely to have rounds with too few/too many cards correct, and the game doesn't take ages because people acquire cards too slowly.
+
+The percentage of rounds decided by special rules (instead of the default) is still quite high. But, as usual, that is fine because the _expansions_ add more regular cards (no rule cards). This dilutes the number of Rule Cards further, so if this percentage was too low now, it would cause issues with the expansion.
+
+Also, I added a simple variant/remark to turn this off---perhaps for your very first game---which doesn't break the game in any way.
+
+I briefly considered making _that_ the default. Extremely simple; Rule Cards just do nothing special. Only their _Finish_ part (bottom text) matters.
+
+But leaving Rule Cards out of the base game _entirely_ would just feel like the base game was only ... half of the game. As if the other half got lost in the mail. And I saw no clear way to explain it later. Because, well, the Rule Cards should _not_ be "just one optional expansion"---they are the core of the game idea and a big part of the deck.
+
+Now I just need to stop tweaking numbers and rerunning simulations, or I'll be doing it all night without actual improvement!
 
 ## Conclusion
 
@@ -142,14 +181,14 @@ Looking at the final material in its entirety, everything added and filled in co
 In another game, I'd have made the rules text bigger + copied it to the other side so it was readable in two directions. But that just doesn't work here, unless I destroy the simple material and rules. Is that worth it? I didn't think so. Reading a single short sentence, perhaps a bit from the side, is the least of your troubles in a chaotic fast-reaction game like this. 
 
 {{% remark %}}
-This is also why I'm glad I changed the rules to "if multiple Rules cards are played, none of them work". This means Rules cards won't happen _so often_ that you're annoyed at having to read them.
+This is also why I'm glad I changed the rules to "if multiple Rules Cards are played, pick the highest". This requires you to focus on the actual _content_ of all Rule Cards anyway, at least for a brief second, to find the highest one. Which isn't much different from reading that one sentence on it. And in any case, only ONE of them is true, so it doesn't overwhelm.
 {{% /remark %}}
 
 As so often happens, a game that was vague and a struggle at first, became one of my favorites. A nice theme, simple rules and cards but slightly deeper gameplay, and all around a solid product. I was probably able to find slightly better solutions (and visual designs) _because_ I took a bit longer on this one and discarded my initial vague ideas.
 
-Sometimes it's worth pushing through an idea that doesn't seem to work at first. Sometimes it's not. It's hard to judge which one it is every time, but it feels I guessed correctly now.
+Sometimes it's worth pushing through an idea that doesn't seem to work at first. Sometimes it's not. It's hard to judge which one it is every time. You just gotta try your best, make the thing, and let others judge its worth.
 
-This game was never intended to be released with this "first batch" of SwiftSmash games. I wrote it down as "very optional" and listed it for the second batch. But, well, things happen, it turned out there was a pot of gold on the other side, and here we are. 
+This game was never intended to be released with this "first batch" of SwiftSmash games. I wrote it down as "very optional" and listed it for the second batch. But, well, things happen, I thought I had something good enough to make now, and here we are. 
 
 It did make it hard to "place" this game in the ranking for SwiftSmash Games. (I usually present these in order of complexity, so new people can try the simplest one first.) It's simple, but also very text-reliant. It's simple, but also longer than the other games. So I ended up placing it middle of the pack anyway. We'll see if that changes _next year_, when I'll probably close off the series with 4 more games.
 
