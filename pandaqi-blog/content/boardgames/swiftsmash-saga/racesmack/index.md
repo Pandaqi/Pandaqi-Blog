@@ -144,6 +144,21 @@ Anyway, what were the results?
   * This combines with the change above to place some value on just "having a lot of cards" (by winning a lot), while keeping a slight tension/decision because you might not want a higher-numbered finish to replace the one you're currently going for.
   * Well, at first I wanted to make this a _decision_. Any cards scored were optional and could be discarded. But ... it's actually more interesting if we _don't_ do that. You might get a situation where you don't _want_ to be the first player, because it'd win you a card that ruins your Race.
 
+The biggest change, however, was realizing that I needed _fewer shapes on the cards_.
+
+* When I created the material, I made an educated guess (based on previous games). There could be 1--6 shapes on a card, where the middle one (3) was most likely, and the other numbers became less likely as you moved further away.
+* But ... this is overwhelming, makes certain finishes _very easy to get_, and _worsens the problem_ of almost any card being correct. (When there are so many shapes on a card, it's very likely to contain the "most common one" too.)
+* It's also one reason for the wildly different results sometimes. If you're very unlucky with your cards/finish/rule, having that many shapes on cards can ruin you for an entire game. (Maybe your finish says "you need 8 cards and none match a shape with a neighbor"---that becomes incredibly hard if you win cards with 4+ shapes.)
+* Instead, I changed that to be 1--4 (and lowered a few finish requirements to balance/match). Moreover, the lower numbers are slightly more likely.
+  * This makes it quite 50/50 that neighboring cards (don't) match.
+  * While increasing the probability of a card _not_ having the most common shape (usually because it only has 1 shape).
+  * While making the game less overwhelming if you're with a lot of players.
+
+{{% remark %}}
+Also spotted a slight bug in my simulation thanks to these changes. But fixing it had surprisingly almost zero impact. And yes, I checked that it truly was a bug and it truly was fixed now.
+{{% /remark %}}
+
+
 As usual, I made all these changes, tweaked some numbers, and watched the simulation stabilize around the values you typically want. Also as usual, this is no guarantee of anything, it's just random computer players doing random moves, and a "perfectly balanced game" isn't necessarily fun.
 
 But as the list above demonstrates, these simulations simply catch errors and potential issues that might never crop up in my own playtesting. (Because I can't playtest my game 10,000 times with different players and stuff :p)
@@ -153,7 +168,7 @@ Now some final, hard statistics / numbers!
 * **Average # correct cards per round**: 1.6. (Likely more than one, but rarely "all cards correct".)
 * **% Games won by finishing**: 96% (With actual intelligent players, likely 100%.)
 * **% Rounds with NO correct cards**: 15%. (Again, it will happen once or twice, but not all the time.)
-* **Average # rounds per game**: 8 (Bit short for some player counts, a bit long for others, but that's why it's a nice average.)
+* **Average # rounds per game**: 10 (Bit short for some player counts, a bit long for others, but that's why it's a nice average.)
 * **% of rounds where special rules matter**: 75% (A _bit_ high, but is it an issue?)
 
 The changes I made (mostly to keeping Finish Cards instead of replacing them) really stabilized the game. More likely to finish, less likely to have rounds with too few/too many cards correct, and the game doesn't take ages because people acquire cards too slowly.
