@@ -5,7 +5,7 @@ emoji: "🐦"
 thumbnail_media: "six_of_sparrows_header.webp"
 ---
 
-Welcome to the devlog for my game called [Six of Sparrows](https://pandaqi.com/six-of-sparrows/). 
+Welcome to the devlog for my game called [Six of Sparrows](https://pandaqi.com/chiptales/bet/six-of-sparrows/). 
 
 It will be a short one, as the game was developed rather quickly and considered more of a "mini game" in-between bigger game projects. Nevertheless, the game turned out more than good enough, otherwise you would've never even known of its existence ;)
 

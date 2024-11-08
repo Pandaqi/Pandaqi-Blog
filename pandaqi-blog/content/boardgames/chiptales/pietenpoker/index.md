@@ -5,7 +5,7 @@ emoji: "🎰"
 thumbnail_media: "pietenpoker_header.webp"
 ---
 
-Welkom bij het "dagboek" over de ontwikkeling van mijn spel [Pietenpoker](https://pandaqi.com/pietenpoker/). Dit artikel zal behoorlijk kort zijn, want het is een erg simpel spel en eigenlijk origineel niet bedoeld om uit te geven. Desondanks hoop ik dat het interessant is en goed weergeeft hoe zoiets tot stand komt!
+Welkom bij het "dagboek" over de ontwikkeling van mijn spel [Pietenpoker](https://pandaqi.com/chiptales/bet/pietenpoker/). Dit artikel zal behoorlijk kort zijn, want het is een erg simpel spel en eigenlijk origineel niet bedoeld om uit te geven. Desondanks hoop ik dat het interessant is en goed weergeeft hoe zoiets tot stand komt!
 
 ## Wat is het idee?
 

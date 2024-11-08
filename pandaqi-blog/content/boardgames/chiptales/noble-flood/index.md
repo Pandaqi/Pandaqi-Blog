@@ -5,7 +5,7 @@ emoji: "🃏"
 thumbnail_media: "noble_flood_header.webp"
 ---
 
-Welcome to the devlog for my game [Noble Flood](https://pandaqi.com/noble-flood/). In this article, I keep track of the entire process, discuss any problems I found and how I solved them, and why I did certain things. Hopefully it's interesting or instructive to read!
+Welcome to the devlog for my game [Noble Flood](https://pandaqi.com/chiptales/bet/noble-flood/). In this article, I keep track of the entire process, discuss any problems I found and how I solved them, and why I did certain things. Hopefully it's interesting or instructive to read!
 
 ## What's the idea?
 
