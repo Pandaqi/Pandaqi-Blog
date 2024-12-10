@@ -293,7 +293,46 @@ Nou, zo maakte ik het spel dus af. En zo werd het uiteindelijk die avond gespeel
 
 Hoe ging dat?
 
-@TODO: Vertel specifieke verloop, resultaten, veranderingen/lessen
+Oké, zoals ik al meerdere keren heb gezegd, wist ik dat dit een chaos zou worden. Je hebt veel mensen, de tafel staat vol met eten/inpakpapier/halve surprises, etcetera.
+
+Maar omdat ik daarmee rekening had gehouden, was dat geen probleem. Het spel was in twee minuten uitgelegd, vrijwel iedereen begreep het daarmee genoeg (om het te gaan spelen), en het is heel makkelijk om de kaarten weg te leggen (want iemand kiest een volgende surprise) en dan tien minuten later weer een ronde te spelen.
+
+Ook is het _idee_ van poker er inderdaad nog steeds, en is er al snel wat strategie zichtbaar. Eén iemand was bijvoorbeeld héél voorzichtig---die ging bijna nooit mee met een ronde---maar spaarde daarmee handkaarten om eens in de zoveel tijd gigantisch te winnen. Dit was niet "overpowered" (immers win je dus 95% van de rondes helemaal niks), maar gewoon een leuke strategie die ontstond.
+
+Want ja, uiteindelijk heb ik nog een paar cruciale regels veranderd. (Dit deed ik al toen ik de spelregelplaatjes maakte, toen ik deze veranderingen opschreef als "waarschijnlijk beter, test ze uit")
+
+* Je moet _drie willekeurige kaarten_ pakken uit je gewonnen inzet (blind, als mogelijk). Dit is niet optioneel, je mag niet kiezen voor of na. Deze simpele actie zorgt er inderdaad voor dat spelers reden hebben om slimmer te spelen en meer te geven om elk potje. Want er staan altijd kaarten van zichzelf op het spel. Maar ze hoeven _niet_ te winnen, want ...
+* Als je stopt _behoudt je jouw handkaarten_. Dus stoppen kan behoorlijk strategisch zijn. Je ziet dat jouw huidige kaarten deze ronde niet gaan winnen, maar ja, drie van die kaarten zijn gewonnen inzet die je niet kwijt wilt. Dus nu kan je stoppen en dat (nog) niet verliezen.
+
+Ook is het fijn hoe die eerste regel _later_ uitgelegd kan worden---zodra de meesten daadwerkelijk inzet hebben. Dit kan een eerste uitleg potentieel nóg sneller/simpeler maken.
+
+Is het een legendarisch spel? Nee, natuurlijk niet. Daarvoor is het te simpel. Je hebt wat strategie, een goede speler wint echt wel van iemand die niet oplet, maar er is nog altijd een flinke dosis geluk en eventueel bluffen. Net zoals echt poker.
+
+Dat is oké, want het is de _bedoeling_ dat elke familie/groep mensen dit losjes kan spelen terwijl ze eten/cadeaus pakken/kletsen/weet ik veel.
+
+Het spel wordt wél veel sterker als je wat van de uitbreidingen toevoegt. Die konden we jammer genoeg die avond zelf niet testen (te veel mensen, te weinig tijd, onrust, etcetera), maar later in een kleinere/rustigere setting wel. De uitbreidingen zijn in een halve minuut uitgelegd, maar kunnen alles op z'n kop zetten. 
+
+Zoals die _Pietje Precies_ die voorkomt dat spelers zomaar in een geweldige combinatie kunnen lopen, toevallig, omdat ze nou eenmaal een hand hebben met allemaal kaarten in dezelfde kleur. Dan moet je extra tactisch zijn met voor welke combinatie je gaat + of je denkt dat die hoog genoeg gaat zijn/je inzet waard gaat zijn. (En met de actiekaarten en dergelijke erbij, is sowieso véél meer mogelijk tijdens een potje.) Dat is eigenlijk "het volledige spel", en het basisspel is de simplistische variant. Maar dat is helemaal oké.
+
+Wel moest ik een paar dingen verduidelijken in de spelregels. Er zijn altijd van die overduidelijke dingen die naar boven komen als je één keer met andere mensen speelt, die op een of andere manier nooit in me opkwamen toen ik het maakte.
+
+De belangrijkste was:
+
+> "Hoogste getal wint van laagste getal" geldt dus altijd, ook bij gelijke kleurencombinaties bijvoorbeeld. (Iemand met 3 Rood verliest van iemand anders met 3 Rood, als die ander hogere getallen op die kaarten heeft staan.)
+
+Ik had graag die extra stap elke ronde ("pak eerst 3 kaarten uit gescoorde kaarten in de hand") weggehaald, maar hij is gewoon té belangrijk. Zonder die stap worden alle keuzes in het spel wel erg willekeurig, of juist overduidelijk ("zet alles in, want je krijgt volgende ronde toch 6 nieuwe gratis kaarten!").
+
+Eigenlijk het enige dat ik voelde, was dat 3 open kaarten op tafel (en 6 in de hand) misschien nét te weinig is om veel grote keuzes te maken. Bij (standaard) poker heb je 5 open kaarten, bijvoorbeeld, waardoor veel meer dingen mogelijk zijn. Tegelijkertijd was het nu eigenlijk wel goed gebalanceerd: precies bij de laatste onthulde kaart zaten mensen zo'n beetje aan hun limiet qua wat ze konden "bieden/inzetten". Langer doorgaan zou simpelweg iedereen hun kaarten laten opmaken totdat ze geen enkele combinatie meer hadden.
+
+Ik heb het simpelweg als een variant opgeschreven: méér kaarten voor méér mogelijkheden. (Maar dat kan slechts met minder spelers + maakt het spel langer.)
+
+Ik ontwerp mijn spellen vrijwel altijd op die manier. Geen enkele speelgroep is hetzelfde, of heeft dezelfde eisen, of dezelfde hoeveelheid tijd. Ik vind het idee van extreem vaste, strikte regels die je moet volgen (en niks anders) dus belachelijk. Ik geef met mijn varianten/uitbreidingen altijd allemaal makkelijke manieren om het spel te kneden in een andere richting, en ik ontwerp de regels dan ook om dat mogelijk te maken. 
+
+Dit spel, bijvoorbeeld, werkt met 3 "rondjes om de tafel" die allemaal hetzelfde zijn ("meegaan of stoppen?"). Dat betekent dat er _niks_ hoeft te veranderen om hier gewoon 4 rondjes van te maken, of 6, of 2.
+
+Hoe dan ook, het spel werkt, het speelt makkelijk weg, er is wel degelijk wat strategie en leuke momenten (zoals toen ik dacht te winnen met 4 2'en en degene na mij plotseling 5 Geel presenteerde), en het ziet er allemaal leuk uit. Oh, de ontvanger van de surprise was er ook blij mee---vooral met die speciale actiekaarten dan, waarvan ze foto's maakte om aan haar vrienden te tonen :p
+
+Na al deze kleine fixes en updates, vond ik het spel wel af. 
 
 ## Conclusie
 
