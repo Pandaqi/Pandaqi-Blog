@@ -143,7 +143,9 @@ Some interesting bits I can think of right now:
 * After all this work, I realized I really didn't have much space left for showing _water currents_. A symbol in the corners wasn't enough (and might be obscured too). A big arrow in the center would certainly be obscured (by special icons _or_ simply the pawn standing on the tile). I opted, reluctantly, for some simple wavy pattern I could put on top of the _whole_ tile.
 * Because the setup for this game is literally "place a random water tile on the table, put your boat on it, go!" ... I didn't add an interactive setup generator anymore. Felt a bit pointless.
 
-@TODO: IMAGES of FINAL MATERIAL
+![Examples of collectible tiles and empty tiles + notice the faint water currents.](sails_final_1.webp)
+
+![Examples of the main "vehicle cards" for moving your ship.](sails_final_2.webp)
 
 ## Conclusion
 

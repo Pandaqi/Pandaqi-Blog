@@ -119,7 +119,13 @@ Also, I moved the original rules (with some tweaks) to an _expansion_. In case p
 
 Below are images of the final material. I must admit being quite tired from drawing similar things for all Naivigation games, so the collectibles are less detailed/unique here than in other games. The railroad tracks, though, received some more love because I knew how crucial (and omnipresent) they'd be. These are my prettiest board game tracks I ever made :p
 
-@TODO: IMAGES (final material)
+![Some regular map tiles and tracks + collectibles and special crossing.](trains_final_1.webp)
+
+![The Switch Tiles (determines how the train moves) and Train Tiles (moved to expansion, as I just explained).](trains_final_2.webp)
+
+![Some possible vehicle cards.](trains_final_3.webp)
+
+These images are usually from a PDF with ALL material. I always create one anyway, then transfer that file to my drawing tablet, so I can cut out cards to use for all the rulebook images! Because this game changed at a late stage, but Train Tiles were still kept in (as an expansion), a lot of what you see in these images isn't "base game" actually.
 
 ## Conclusion
 

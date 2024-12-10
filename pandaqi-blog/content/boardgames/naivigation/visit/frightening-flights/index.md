@@ -124,11 +124,11 @@ What is an intuitive, thematic, built-in way to signal the elevation of a map ti
 
 This will now be used on _all tiles_ (except spaceship, as there's no elevation in space, and it's an outlier anyway that can't be combined with the other games).
 
-@TODO: IMAGES of terrain + elevation
+![Notice the triangles in the corners. If you're not looking for them, they don't get in the way. But they're clearly visible if you want to know the elevation---and also consistent per terrain type.](flights_final_1.webp)
 
 With those changes, and my final tweaks to graphics, the final material (for now ...) looks like this:
 
-@TODO: IMAGES final material
+![Just 2 examples of the "vehicle cards" for this game.](flights_final_2.webp)
 
 ## Conclusion
 
