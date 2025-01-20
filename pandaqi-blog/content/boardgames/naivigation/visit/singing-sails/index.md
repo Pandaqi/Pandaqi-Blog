@@ -132,6 +132,8 @@ With that, I thought the rules were solid and couldn't be simpler, so I called v
 
 ## Let's make that!
 
+### Time Skip
+
 As mentioned in the other devlogs, development for these major games was messy and I forgot to update this devlog along the way.
 
 Just imagine I wrote a lot of code and drew a lot of things in the meantime, and now the game is basically done.
@@ -146,6 +148,53 @@ Some interesting bits I can think of right now:
 ![Examples of collectible tiles and empty tiles + notice the faint water currents.](sails_final_1.webp)
 
 ![Examples of the main "vehicle cards" for moving your ship.](sails_final_2.webp)
+
+### A Dumb Issue
+
+Also, when I saw this and made the final rulebook images, I realized some really really stupid mistake. I thought I'd "fixed" that, and I did to some extend, but using _expansions/variants_. This issue was very much ruining the _base game_.
+
+* In the base game, the only way to get new tiles is by "exploring". 
+* You sail off the map, then add a new tile from the deck (which is pointed the same way as your ship) underneath yourself.
+
+In my mind, I thought I had decoupled "placing harbors" and "where you are". I hadn't. I'd merely decoupled "ship rotation" and "compass rotation". And the vehicle cards and rules that were supposed to prevent this issue, had been swiftly moved to an expansion some time ago. 
+
+In practice, this ruleset obviously leads to the following situation:
+
+* "Hey, there's a Harbor at the top of the South tile."
+* "Let's point our Ship south and sail straight off the map."
+* "Great! Now we can just place that harbor underneath ourselves, instantly visit it, what an easy game!"
+
+I had accidentally reduced the base game to pretty much randomness without a point to it. Sail anywhere, immediately stand on a harbor, collect it, win :p
+
+I usually have one such major oversight with any project, simply because my brain got distracted during the making of _this specific thing/rule_. And hyperactive brains don't tend to get back on track, like, ever. 
+
+{{% example %}}
+I once _almost_ published a book without realizing I'd left my entire sketchy-vague-plot-outline appended to the end of Chapter 13. I'd just completely accepted I had already deleted it/copied it to a proper outline file, got distracted, never checked it. That's why I purposely have good structures and habits to ensure I catch things like this, usually in time.
+{{% /example %}}
+
+The solution, fortunately, presented itself easily now that I saw it with fresh eyes.
+
+* When exploring, simply place 1 tile from _every deck_, at their compass side. (So the North deck, for example, needs a tile placed to the NORTH/TOP of the map.)
+* Only the tile at your ship's side is placed _underneath_ it, the others have freeform placement.
+* BUT! Land must attach to land, water to water, if possible.
+
+That last rule was a "variant" before, but I was really looking for reasons to make it the default base game. It is natural for players to expect this, I noticed, and it simply leads to a much prettier map + more challenge. This set of three simple rules ensures that harbors are regularly placed quite far away from yourself.
+
+You _can_ still insta-visit harbors. But at that point, this is just a reward for solid strategy, as you must ...
+
+* All realize a harbor is on top of a certain deck.
+* Properly cooperate to sail off the map at the right edge for it.
+* And do so without crashing into land or ruining it by going off _another_ edge first.
+
+My hyperactive brain also tends to make things too difficult, because it thinks about rules _too much_ (and is easily bored), so I've learned to always give my players "some easy wins". Because things that seem _too easy_ or _straightforward_ to _my_ mind, are usually just perfectly balanced (difficulty-wise) to your average player that's new to the game.
+
+My only gripe was that Ship rotation _doesn't matter in the base game now_. (It does with expansions and other special tiles.) I found some good solutions there too, such as "can only visit harbor if Ship points to it". After a lot of back-and-forth on this, I decided to put this in the base game (instead of keeping it as a variant or expansion). It's a really intuitive rule, just a few extra words, and it achieves _so much_.
+
+* The card that rotates Compass or Ship becomes even more useful, and you have reasons to take that second action in the base game too.
+* It means insta-visiting harbors _only works if your Ship is oriented correctly_, which solves that issue even more.
+* It prepares you better for the expansions. (Otherwise, the base game would oddly have you play with the ship oriented completely differently from the wind direction and how you move, which is unintuitive, unnatural and against what the kind of play expansions desire.)
+
+All these additions, though, did increase the game's "first teach" complexity juuust a little bit. I ended up placing it _after_ the game about driving a car, because I felt it was more "advanced" than that now. Still, I've planned to use similar "sailing mechanics" but in a much more simplified way for another Minor Naivigation Game about a water vehicle. I'm fine with having this game be of "medium complexity", so other water-based vehicles can go much lower or much higher in complexity.
 
 ## Conclusion
 

@@ -747,6 +747,39 @@ My "yearly planning" is just a single A4 page I ripped from a notebook, which is
 
 This means the devlog will be dormant for a while until I pick up the next update.
 
+### Rulebook iterations
+
+But wait! I wanted to quickly mention some final thoughts I had when making the rulebook images for these games.
+
+Most of my games have a handful of different "icons" or "special tiles". For that purpose, I built a general "rulebook table/list" system long ago. I can give it my dictionary of things (which is defined in code and used by the material generator) and it turns that into a nice interactive table that shows pictures and explains how they work.
+
+I had planned to do the same for Naivigation, of course. Every expansion adds a few new vehicle cards and/or map tiles, and I adding text on the material is _optional_. So they need to be clearly defined and explained in the rules.
+
+But ...
+
+All these things need a nice _example image_ anyway. As I was making the first rulebook images, I realized we didn't _need_ the list anymore. The rulebook image:
+
+* Displayed all the new items (from this game/expansion)
+* Explained how they work
+* And, if possible/needed, gave an actual visualization of how to use them (or how NOT to use them).
+
+It was a way better version of the table that would originally be in the rulebook. And at that point, adding a separate (text) table for these elements would be too much hassle, look worse, and duplicate the same information.
+
+{{% remark %}}
+You might think duplicating important information in the rules is GOOD, but it is usually BAD! It makes the rulebook way longer, which is overwhelming and makes players actually skip parts, or not even bother learning this game. It's also a source of discrepancies, as the duplicated information might be updated in one spot later but not in another, which is just a major source for endless confusion with playtesters in my experience.
+{{% /remark %}}
+
+So I decided to explain them all through these nice and detailed rulebook images. It's much clearer, it's nicer, it fits well and makes the rules really tight.
+
+But! I do know the importance of making something completely searchable through _text_, and I know (more than most) that terrible internet can mean the images might not load for some, so I did make sure to ...
+
+* Add a textual explanation (albeit summarized) for all crucial base game cards/tiles.
+* Mention the names of everything included in an expansion in text. (So you know you should have the card, and you can also _search_ for its name to find the image explaining it.)
+
+Is it ideal? Nah, nothing is. But it's very clean and succinct this way, while clearly explaining every part of the game, even if you turned off all other helpers (such as text on tiles themselves).
+
+Anyway, as you might expect, I created these images as basically the very very last thing I did, that's why this section was put here.
+
 ### Preparing for my return
 
 For now, I merely created a neat list of all "minor Naivigation games". Some of them already have clear rules and vehicles, some are just "this leftover mechanic is interesting, put it somewhere". Any remaining vehicles, which are often of the "silly variety" (such as a magic carpet), are in the special category.

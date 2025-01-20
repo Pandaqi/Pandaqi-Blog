@@ -111,7 +111,7 @@ Such as harsh cutoff always looks much better, in my experience, than continuall
 
 And so we get a simple but effective look for the final cards:
 
-![A screenshot of some positive cards from the final material (base pack).](the_game_of_dilemmas_final_material.webp)
+![A screenshot of some positive cards from the final material (base pack).](game_of_dilemmas_final_material.webp)
 
 ## Conclusion
 
