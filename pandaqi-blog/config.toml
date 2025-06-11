@@ -2,13 +2,15 @@ baseURL = 'https://pandaqi.com/blog/'
 languageCode = 'en-US'
 title = 'Pandaqi Blog'
 theme = 'pandaqi-blog'
-paginate        = 6
 summaryLength 	= 18
 
 pygmentsUseClasses = true
 pygmentsCodefences = true
 
 sectionPagesMenu = "main"
+
+[pagination]
+  pagerSize = 6
 
 [build]
   noJSConfigInAssets = true

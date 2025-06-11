@@ -1,5 +1,5 @@
 {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "transpiler" "dartsass") }}
-{{ $style := resources.Get "sass/style.scss" | resources.ToCSS $options }}
+{{ $style := resources.Get "sass/style.scss" | css.Sass $options }}
 
 {{ if not .Site.Params.testOnlyCriticalStyle }}
 	<link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}">
