@@ -43,7 +43,7 @@ example, and get a huge sea with some tiny islands in it.
 
 Nice!
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // you can see this as the "resolution" => it determines how large each cell is and how far zoomed in the noise is
 const z = (this.cfg.cellSize / this.cfg.noiseZoom);
 
@@ -128,7 +128,7 @@ The city placement algorithm now became very simple:
 
 Below is the code for this whole algorithm.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 /* 
     STEP 1
     Go through whole grid, check neighbours, and mark locations at the edge of the water

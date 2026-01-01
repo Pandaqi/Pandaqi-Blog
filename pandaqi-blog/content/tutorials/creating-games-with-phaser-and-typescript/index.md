@@ -230,14 +230,14 @@ In its simplest form, use them as follows.
 
 At the end of a file, state that something should be exported so it's available elsewhere.
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 const obj = { "a": 5, "b": 3 };
 export default obj;
 {{% /highlight %}}
 
 When you want to use this elsewhere, import it at the top of that other file. If you export multiple things, you can pick which one(s) to use.
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 import obj from "./obj"
 {{% /highlight %}}
 

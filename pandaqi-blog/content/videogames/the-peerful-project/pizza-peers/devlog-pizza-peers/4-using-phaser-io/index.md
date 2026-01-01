@@ -61,7 +61,7 @@ discuss them here.
 Once "create game" is pressed, however, a function "startPhaser()" is
 called that does the following: 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function startPhaser(connection) {
   // initialize Phaser game
   // inside a div with id "phaser-game"
@@ -139,7 +139,7 @@ player \<=\> peer.
 
 The addPlayer function becomes something like this: 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 addPlayer: function(peer) {
   // determine a random position for the player ...
 
@@ -187,7 +187,7 @@ connection). This message contains a movement vector.
 The computer receives this message and calls "updatePlayer()", which is
 a very simple function: 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // vec = a 2D movement vector; 
 // vec[0] is movement over the X-axis, vec[1] over the Y-axis
 

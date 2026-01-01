@@ -82,7 +82,7 @@ Below is the code for this algorithm.
 
 (I don't know if I need to say this, but these code samples are usually **not** the full code. I leave out the uninteresting bits, or parts that might be confusing. And some things are just a function call. Like "cityHasRoomForGood()"---I think everyone understands what that function is doing.)
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // "GOODS" = dictionary with all goods (incl PROBABILITY of appearing and DIFFICULTY when they appear)
 // The first part of the function removes all the goods we don't need
 // The second part draws randomly following this probability distribution
@@ -221,7 +221,7 @@ variable on each city. When you connect with another city that already
 has a group, you copy it. If that doesn't happen, you start a new group
 yourself.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // The code for this is scattered across multiple functions 
 // -> to get a full understanding (also of the pathfinding bit), check the createConnections() function in the source code
 
@@ -421,7 +421,7 @@ square and all cities should still be connected.
 
 Now, this code is also way longer than you'd like, but I really saw no better way to do this.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // This is called on all squares => again, could be optimized by only keeping a list of "possible ugly boxes", but I had no need to
 function checkUglyBox(x,y) {
   // if we're not even part of a path, ignore this

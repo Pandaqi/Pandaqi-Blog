@@ -1,6 +1,6 @@
 ---
 title: "How I Coded My Own Webshop"
-date: 2026-01-01
+date: 2025-12-01
 emoji: "🛒"
 ---
 
@@ -375,7 +375,7 @@ for(const item of json.content.items)
 
 If this list is empty, then there are no physical goods and we're done. If not, we have to turn that into an actual order for Printify.
 
-{{< highlight >}}
+{{< highlight javascript >}}
 const printifyData = {}; // explained below
 const printifyURL = `https://api.printify.com/v2/shops/${ PRINTIFY_SHOP_ID }/orders.json`;
 const response = await fetch(printifyURL, {

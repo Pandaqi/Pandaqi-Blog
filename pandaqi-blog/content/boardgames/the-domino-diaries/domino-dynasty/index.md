@@ -1,6 +1,6 @@
 ---
 title: "Domino Dynasty"
-date: 2025-26-06
+date: 2025-06-26
 emoji: "👑"
 thumbnail_media: "domino_dynasty_header.webp"
 ---

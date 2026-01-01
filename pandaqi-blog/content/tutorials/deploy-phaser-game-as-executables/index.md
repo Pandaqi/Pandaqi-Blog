@@ -101,7 +101,7 @@ An electron project should _start_ by calling that package and going to the entr
 
 In Node projects, this is usually done by adding "scripts" to the configuration. Go to `package.json` and add this:
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 {
     // ...
     "scripts": {
@@ -128,7 +128,7 @@ What is the purpose of this file? It will tell Electron ...
 
 The code below is the basic boilerplate for that.
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 const { app, BrowserWindow } = require('electron')
  
 function createWindow() {
@@ -242,7 +242,7 @@ There's this annoying menu bar at the top of the window. Great for applications,
 
 Remove it by adding this line to your `main.js`, before you load the `index.html` into the window.
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 win.setMenuBarVisibility(false);
 {{% /highlight %}}
 
@@ -284,7 +284,7 @@ It's recommended to start with a 1024x1024 image. Then use any tool (like an onl
 
 Now you can add the symbols---note the plural---like this, by not specifying the extension.
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
     packagerConfig: {
         icon: '/path/to/icon'
     }
@@ -296,7 +296,7 @@ For Linux, you need to specify the icon at the _maker_, instead of globally.
 
 By default, Electron Forge ignores that big node_modules folder. If that doesn't seem to happen (it takes very long, final build is very large), you can enter your own paths to ignore:
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
     packagerConfig: {
         ignore: ['path1', 'path2', ...]
     }
@@ -304,7 +304,7 @@ By default, Electron Forge ignores that big node_modules folder. If that doesn't
 
 Additionally, Electron Forge can compress all your files into one archive file. Which is faster to create and to load. This uses a format called "Asar".
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
     packagerConfig: {
         asar: true
     }

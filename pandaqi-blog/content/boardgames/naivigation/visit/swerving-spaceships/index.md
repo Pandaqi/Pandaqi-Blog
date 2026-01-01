@@ -183,7 +183,7 @@ It's a bit of a mess to figure this out. But the more I see the patterns, the mo
 
 For example, this is all the code for the main SPACESHIP file right now. (Which obviously calls other files and other functions, but I'm just trying to illustrate the general point here.)
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const generator = new MaterialGenerator(CONFIG);
 generator.addPipeline("tiles", createTilePicker(), CONFIG.tiles.drawerConfig);
 generator.addPipeline("cards", createCardPicker(), CONFIG.cards.drawerConfig);

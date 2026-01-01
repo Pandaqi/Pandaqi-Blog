@@ -80,7 +80,7 @@ nodes in sequence, I execute this function:
 
 The code for this particular part looks as follows: 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 //
 // somewhere else, where we check if a node is allowed
 //
@@ -128,7 +128,7 @@ If that's the case, we **temporarily** skip it and try the next one on
 the list. Repeat until we find a matching type. (If we find nothing that
 fits, the algorithm begrudgingly assigns a random type from the list.)
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function determineNodeTypes() {
   // now go through all points 
   var nodeTypes = []; // ACTUALLY a list with all the nodes we actually want to place; explained later
@@ -259,7 +259,7 @@ there are infinitely many of them.)
 
 This is the code:
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function placePowerDots() {
   const powerDotRadius; // size of power dots; depends on, well, whatever you decide to set it to
   var minPD, maxPD // minimum and maximum number of power dots; depends on player count

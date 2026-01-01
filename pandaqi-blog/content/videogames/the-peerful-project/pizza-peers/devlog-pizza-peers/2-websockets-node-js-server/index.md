@@ -37,7 +37,7 @@ servers both static files (which are the game files) and accepts
 websocket connections (which are needed to connect players with the
 computer). 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 process.title = 'pizza-peers';
 var webSocketsServerPort = process.env.PORT || 8888;
 
@@ -150,7 +150,7 @@ In my case, this is even more simplified:
 See the code below for the basic structure of this system. (It will make
 even more sense once we've created the client side.) 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // WebSocket server
 wsServer.on('request', function(request) {
 	// accept the connection
@@ -250,7 +250,7 @@ index.html in my source code.
 Then, make sure the JavaScript below is run (*once the page has finished
 loading*): 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // if user is running mozilla then use it's built-in WebSocket
 window.WebSocket = window.WebSocket || window.MozWebSocket;
 

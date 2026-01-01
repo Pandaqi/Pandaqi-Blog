@@ -1,6 +1,6 @@
 ---
 title: "Highrise Homino"
-date: 2025-26-06
+date: 2025-06-26
 emoji: "🏨"
 thumbnail_media: "highrise_homino_header.webp"
 ---

@@ -96,7 +96,7 @@ For reading:
 
 This one mystified me for at least an hour. Here's the error message you'll see when this happens:
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 FirebaseError: Expected type 'Xc' (or some other type), but it was: a custom 'vn' object (or some other type)
 {{< /highlight >}}
 
@@ -131,7 +131,7 @@ I wrote it as a class in its own file. To use it, call ``new Leaderboard()`` fro
 
 ### First connection
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 export default class Leaderboard
 {
     // This is given to you when you create your project
@@ -179,7 +179,7 @@ All calls from now on are made to the database ... over the internet ... which m
 
 Note that my examples aren't the only way or the best way to do it. I chose this particular syntax because it was easy to read and modify, also for this tutorial.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 getDocument() {
     const that = this;
     const loadData = async () => {
@@ -209,7 +209,7 @@ You can also create the Leaderboard object once the player _finishes_ their firs
 
 But then you'll need to wait until these setups + checks are done before you can submit the score and retrieve the database.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 createDataIfNeeded()
 {
     const hasEntry = this.docResult.exists();
@@ -240,7 +240,7 @@ To simplify things, I go around this by keeping the latest known score on the Le
 
 With all this setup, this has become a very easy step.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 public submitScore(newScore:integer)
 {
     const scoreIsntBetter = (newScore <= this.score);
@@ -282,7 +282,7 @@ On top of that, there's one last piece of black magic: **queries**. You often do
 
 Queries are extremely powerful and versatile. For this tutorial I'll only do the very basic step of sorting and limiting.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 private fetchLeaderboard()
 {
     const that = this;

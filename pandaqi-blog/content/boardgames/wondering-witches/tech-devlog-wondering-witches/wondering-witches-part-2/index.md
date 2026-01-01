@@ -94,7 +94,7 @@ heuristics above, the simulation takes (on average) about 500-1000
 evaluations before it knows whether a puzzle is solvable. This happens
 so fast, you probably don't even have to wait.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // THE BIG LOOP! Create puzzle, then check if it is solvable, rinse and repeat until done
 // (this is called at the start of the game)
 puzzleIsValid = false;

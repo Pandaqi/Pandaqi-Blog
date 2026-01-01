@@ -86,7 +86,7 @@ Previously, the PDF simply copied the resolution of the canvas. This was an A4 .
 
 So, this object calculates a factor with which all canvases are scaled. The number `3.775` is how you convert pixels to millimeters. The number `1.66` was ... found through experimentation. It's the point at which my end result looks crisp (and not _blurry_ like before), without being overly huge or slow.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const factorDPI = window.devicePixelRatio * 3.775 * 1.66;
 {{< /highlight >}}
 

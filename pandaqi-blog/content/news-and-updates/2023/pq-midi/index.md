@@ -133,7 +133,7 @@ The default is absolute. This is unconventional---you might like "traditional" b
 
 Here's an example of syntax and the result
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 :C4/1 D4/2 A3/1 | A3/1 A3/1 C4/2 |
 :F2/4 | C3/4 |
 :A3/2 R/2 | G3/4 |

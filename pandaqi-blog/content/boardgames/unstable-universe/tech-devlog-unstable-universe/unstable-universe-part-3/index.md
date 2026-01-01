@@ -86,7 +86,7 @@ won't be encountered any more in steps 2 and 3.
 
 Hopefully the code clarifies any issues with this explanation:
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function createBetterNodeCollection() {
   var tempNodes = {}, name = '', curNodeData = { sum: 0, categories: [], actionTypes: [] };
 
@@ -261,7 +261,7 @@ nodes) with straight lines, and it connects corner nodes on both sides.
 
 Calling this function *before* finding the areas, solved all issues.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function findEnclosedAreas() {
   this.areas = [];
 
@@ -371,7 +371,7 @@ because there isn't enough to push it back.
 
 **Step 4:** use this point to place something inside this area!
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function findSuitableAreas() {
   this.suitableAreas = [];
 
@@ -520,7 +520,7 @@ To do this, I use an old technique called **shrinking the polygon**:
 Lastly, I rotate the resources randomly and vary their amount based on a
 rough approximation of area size.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function addNaturalResources() {
   this.naturalResources = [];
 
@@ -704,7 +704,7 @@ the area detection algorithm!)
 That's it! A simple, small addition that adds huge implications to the
 gameplay.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function addTinyPoints() {
   // IMPORTANT NOTE: these nodes were called "intermediary points" before they became tiny nodes, so that's still everywhere in the code
   this.intermediaryPoints = [];

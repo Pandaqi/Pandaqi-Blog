@@ -1,6 +1,6 @@
 ---
 title: "Theme Parque"
-date: 2025-26-06
+date: 2025-06-26
 emoji: "🎢"
 thumbnail_media: "theme_parque_header.webp"
 ---

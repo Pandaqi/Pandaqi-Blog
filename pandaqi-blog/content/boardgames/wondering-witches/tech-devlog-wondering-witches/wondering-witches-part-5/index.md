@@ -36,7 +36,7 @@ original piece of paper.)
 I saved this in the code as an array of rectangles: each shape had a
 start point (x,y) and a size (width, height).
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // divide the paper into rectangles based on player count
 var paperSectionsLibrary = {
 	'players-1': [[0,0,8,4]],
@@ -124,7 +124,7 @@ Before trying to fit cauldrons, I fix a distribution, like this:
 
 The code looks like this:
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // Determine a cauldron distribution
 // Requirements:
 //  * 32 cauldron cells in total
@@ -209,7 +209,7 @@ locations, and we *cannot* place all the cauldrons.
 In that case ... I simply discard all progress and try again :p
 Sometimes solutions are quite simple.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // go through all extra cells
 while(emptySpaces > 0) {
   // find a random place (that still exists)
@@ -307,7 +307,7 @@ the cells it includes. This is immediately fed into the algorithm
 explained earlier, to determine the bounds of the garden and draw the
 right lines.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // go through all extra cells
 while(emptySpaces > 0) {
   // find a random place (that still exists)

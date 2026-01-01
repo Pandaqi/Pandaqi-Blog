@@ -1,7 +1,7 @@
 ---
 title: "Finside Out & Inside Sprout"
 tags: ["devlog", "technical devlog", "jam"]
-date: 2024-21-08
+date: 2024-08-21
 emoji: "🌼"
 ---
 

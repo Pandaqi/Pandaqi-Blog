@@ -96,7 +96,7 @@ correct order. (Ingredient with number 2 must come directly after number
 The computer simply **loops** through the list from start to finish,
 checking the numbers and executing any effects of each ingredient.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function usePotion() {
 	var cSize = curCauldron.length;
 
@@ -233,7 +233,7 @@ may be.)
 Of course, there were some ideas I had to throw out, but it was a
 trade-off I could live with. 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function checkIngredient(cauldronIndex) {
   // get ingredient and initialize empty object for it
 	var ing = curCauldron[cauldronIndex];
@@ -319,7 +319,7 @@ it into one huge list again) and picks randomly from that.
 This ensures we have at least one effect of each type, but also keeps
 some randomness. 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function createPuzzle() {
 	// generate a random ordering of numbers
 	var allNumbers = [];

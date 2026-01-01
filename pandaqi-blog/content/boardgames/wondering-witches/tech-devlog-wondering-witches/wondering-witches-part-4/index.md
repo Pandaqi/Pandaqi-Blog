@@ -139,7 +139,7 @@ This has worked perfectly since. To speed up this process, I also check
 if a neighbour is *outside of the paper*, because that will happen a
 significant chunk of the time, and if so ignore it.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 //
 // Draw gardens
 //
@@ -226,7 +226,7 @@ Once the canvas has been generated ...
 
 The code is actually quite simple: 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // after a small time interval, replace this whole game with just a static image
 // (why the wait? the canvas needs to be drawn/dirtied and updated, otherwise we copy a black canvas)
 this.time.addEvent({

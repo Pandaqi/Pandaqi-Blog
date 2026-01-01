@@ -42,7 +42,7 @@ performs the buying action within the game. The second is triggered when
 a player *enters* a buying location, the third when that player *leaves*
 the location again. 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 //
 // This signal is handled by the computer
 // gm = a reference to the mainGame scene within Phaser
@@ -113,7 +113,7 @@ The code below is all you need.
 game, but I want to keep it simple. I mainly allowed mouse input because
 it made testing much quicker on my laptop.) 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // the current peer connected with this (smartphone) interface
 var curPeer = null;
 

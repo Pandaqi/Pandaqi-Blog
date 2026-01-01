@@ -1,6 +1,6 @@
 ---
 title: "Dinoland"
-date: 2025-26-06
+date: 2025-06-26
 emoji: "🦕"
 thumbnail_media: "dinoland_header.webp"
 ---

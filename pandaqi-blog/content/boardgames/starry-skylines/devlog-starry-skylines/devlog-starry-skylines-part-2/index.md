@@ -144,7 +144,7 @@ This is an algorithm that I've used extensively since the first time I
 encountered it, because it's a really simple way to pick random elements
 *following some probability distribution*. It looks like this:
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 //
 // This is executed once at the start, to compile the full list for this particular game
 //

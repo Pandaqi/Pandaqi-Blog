@@ -1,6 +1,6 @@
 ---
 title: "The Domino Diaries"
-date: 2025-26-06
+date: 2025-06-26
 emoji: "🀆"
 thumbnail_media: "the_domino_diaries_header.webp"
 ---

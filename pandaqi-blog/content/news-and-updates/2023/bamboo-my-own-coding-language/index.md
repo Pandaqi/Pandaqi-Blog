@@ -144,7 +144,7 @@ I wrote down a few different syntaxes. I didn't like any of them for my language
 
 You have the traditional for loop. But that's a _bunch_ of syntax.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 for(var i = 0; i < n; i++)
 {
     ... do stuff ...
@@ -298,7 +298,7 @@ This approach has advantages and disadvantages, like everything. It's very clean
 
 Let's use a simple example. We write a parser `char` that checks if the first character of the string is a specific character.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const char = (c) => {
     return (str) => {
         const matches = str.length && str[0] == c;
@@ -344,7 +344,7 @@ But I'll give examples on how to _use_ them in practice.
 
 Let's start very simple. We want to check if we've encountered a boolean: "true" or "false"
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // checks if the next symbols are exactly the string "c" we provided
 const chars = (c) => {
     return (str) => {
@@ -371,7 +371,7 @@ That's the idea. You find the tiniest possible parts of your language and write 
 
 For example, let's take the next step. We want to check if the next set of symbols is a _literal_. A literal value, which is either a boolean, a string, or a number. Then you'd write ...
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // for simplicity, let's assume all our numbers are floating point: XX.XXXX
 // we match any sequence of digits, a dot, and then more digits
 const number = () => {
@@ -416,7 +416,7 @@ Again, an example will show this. Let's say we match a literal. Then we want to 
 
 In this case, that's just an instance of the class `Literal`.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // the returner functions are incredibly simple, but a crucial part for making this work
 // @NOTE: the arguments to "choice" are now in an array, because we need to add the returner as an argument
 const literal () => {
@@ -485,7 +485,7 @@ This is best illustrated with arithmetic. We've all learned the order of operati
 
 In grammar notation, we get
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 Expr ::= Term + Expr | Term - Expr | Term  // Expression => plus and minus
 Term ::= Factor * Term | Factor / Term | Factor // Term => multiply and divide
 Factor ::= (Expr) | Literal // Factor => grouping or final value
@@ -506,7 +506,7 @@ How do we prevent this? By adding the dependency _later_. The "Expr" is on the _
 
 You can continue this pattern and add, for example, exponentiation and variables. (Where exponents come before multiplication, of course. And variables resolve to values, so they are functionally on the same priority level as literals.)
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 Expr ::= Term + Expr | Term - Expr | Term 
 Term ::= Exp * Term | Exp / Term | Exp
 Exp ::= Factor ^ Exp | Factor
@@ -515,7 +515,7 @@ Factor ::= (Expr) | Literal | Variable
 
 And what is code ... if not just a long list of expressions? The `*` behind a definition is the same as our `some` function: match least once, and as much as possible.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 Code ::= (Block)*
 Block ::= (Statement)*
 Statement ::= (Expr)*
@@ -579,7 +579,7 @@ In the end, I added a `lineterminator` parser.
 
 The hardest part was teaching the program about blocks. I didn't want to introduce symbols for denoting blocks (like `{` and `}`). That would've been rather easy to parse:
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const block = () => {
     return (str) => {
         seq([char("{"), whitespace(), some(statement()), whitespace(), char("}")])
@@ -735,7 +735,7 @@ How would a regular human being, with no experience coding, think about typing a
 
 They'd probably use bullet points, commas or just a white space. Is that something?
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 save 
 * a
 * b
@@ -835,7 +835,7 @@ I benchmarked the speed _before_ the change: 450-500 milliseconds on average. Th
 
 It gets even worse if you combine it with functions. Five simple function statements took _15 seconds_. These are statements like ..
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 machine A
  say 0
 
@@ -874,7 +874,7 @@ I can show this mistake by referring to my simple examples earlier in this artic
 
 This was my parser for a "boolean".
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const bool = () => {
     return (str) => {
         return choice(chars("true"), chars("false))(str);
@@ -890,7 +890,7 @@ You see what I see? It ...
 
 All we want is that final parser. Which is already a valid function from `(str) -> output`. Which means this function is just ...
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const bool = choice(chars("true"), chars("false));
 {{< /highlight >}}
 
@@ -904,7 +904,7 @@ I also moved the parsing and highlighting to a separate thread ("Web Worker"). T
 
 **However**, there's one issue here. Some definitions are self-recursive. For example, this is an "expression". If you remember, that checks for an optional `+` or `-` operation. (I've left out some details in this example, such as the reducer functions that convert the output into an Expression node for the tree.)
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const exprOperator = (op, needsSpace) => { return seq([operator(op, needsSpace), expression]); } // operator expr
 const exprChoice = choice([exprOperator("+", false), exprOperator("-", false), nothing]) // "operator expr" | nothing
 const expression = seq([term, exprChoice]); // term [operator expr | nothing]
@@ -978,7 +978,7 @@ To **define** a bag, write `bag NAME holds`, then start a new code block. (Inden
 
 By default, they'll be numbered (starting from 0). Like an array. But you can label them.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 bag myBag holds
     elem1
     elem2
@@ -988,7 +988,7 @@ bag myBag holds
 
 To **get** properties from them ... use a possessive apostrophe :p It's a weird idea. I thought it would look ... off. But I think it works for this language. The same is true for properties of the bag, like its size ( = length; number of elements).
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 now (myBag's 0) means
 
 if myBag's size is 10

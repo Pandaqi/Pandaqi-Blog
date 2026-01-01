@@ -6,7 +6,7 @@
 		<h1>{{ .Title }}</h1>
 
 		<div>
-			{{ .Summary }}
+			{{ .Summary | plainify }}
 			{{ if .Truncated }}
 				<em>Continue reading ...</em>
 			{{ end }}

@@ -26,7 +26,7 @@ The "on(data)" call is where all the magic happens. As said before, once
 the connection is established, *all* communication goes via that
 listener and *none* of it uses the server anymore. 
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function createPeer(initiator, connection) {
   var peer = new SimplePeer({
     initiator: initiator,

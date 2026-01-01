@@ -117,7 +117,7 @@ I knew Hugo had built-in support for Syntax Highlighting. The [docs](https://goh
 To add a code block, simply use the built-in shortcode.
 
 {{< highlight "Go HTML Template" >}}
-{{</* highlight Javascript */>}}
+{{</* highlight javascript */>}}
     function thisIsATest() {
         return 5 + 5;
     }

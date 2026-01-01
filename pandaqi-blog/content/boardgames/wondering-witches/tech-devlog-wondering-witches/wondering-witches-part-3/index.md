@@ -34,7 +34,7 @@ These effects were extremely useful and effective! Whenever they were
 used, I would just save phrases like "Detective says 4", and print that
 to the screen (in a random order).
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 // This is a subsection of that whole switch statement in checkEffect()
 
 //
@@ -170,7 +170,7 @@ test (or avoid). Additionally, it makes the game a little easier. As it
 stands, the game is quite hard, so by framing this information as a
 "free clue", I can sneakily balance the game a bit more.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 function generateFirstHint(type) {
 	var txt = '<p>Here\'s a <strong>free clue</strong> to start the game!</p><p>';
 	switch(type) {

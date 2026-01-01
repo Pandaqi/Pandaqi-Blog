@@ -131,7 +131,7 @@ The cordova script is used by cordova to add extra functionality to your game. Y
 
 There is also a `js/index.js` file. It has boilerplate code that allows checking if your app is ready to go. You might want to copy this to your game as well, or save it for later, as you'll need this for the AdMob integration.
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
@@ -363,7 +363,7 @@ Once it's finished, switch to your _real_ ad id. Then upload your game to the st
 
 I recommend storing your IDs in an easy-to-reach location within your project, as well as the Google test IDs. For example,
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 const admobConfig = {
     banner: "ca-app-pub-xxx/xxx",
     bannerTesting: "ca-app-pub-xxx/xxx",

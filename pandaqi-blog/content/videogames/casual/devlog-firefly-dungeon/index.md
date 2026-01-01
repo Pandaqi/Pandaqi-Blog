@@ -424,7 +424,7 @@ To solve this, I defined an `interface` for the Components object. One that tell
 
 Then I also create an `interface` for the class I'm extending. In TypeScript, you can just supply multiple classes or interfaces that another interface extends. So I write 
 
-{{% highlight Javascript %}} 
+{{% highlight javascript %}} 
 interface Entity extends blabla, blabla, Components {};
 {{% /highlight %}}
 
@@ -459,7 +459,7 @@ Bad idea, of course. Instead, the modern module system allows you to make everyt
 
 So, previously, I'd have calls like this everywhere:
 
-{{% highlight Javascript %}}
+{{% highlight javascript %}}
 global.systems.powerups.doSomething();
 {{% /highlight %}}
 

@@ -97,7 +97,7 @@ across the width, then the paper would be divided into sections 0-19.
 Then I forced nodes to keep at least a distance of 1, because that's
 exactly how much room there should be for each node.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const numIterations = 100;
 const numPoints = this.points.length;
 const equilibrium = 1.0;
@@ -217,7 +217,7 @@ Using this algorithm, we get something like this:
 
 And here's the code:
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 var curPoint = this.points[0];
 curPoint.visited = true;
 
@@ -272,7 +272,7 @@ that finds the "nearest node": that function is a large bundle of loops
 and if-statements to efficiently find a node following certain
 conditions.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const numExtraConnections = 40;
 const connectionMaximum = 3;
 
@@ -335,7 +335,7 @@ set "hasStartingNode: true". Later, if I want to create a starting node
 but one of its neighbors already has this property, I just skip that
 node and consider the next option.
 
-{{< highlight Javascript >}}
+{{< highlight javascript >}}
 const edges = ['left', 'right', 'top', 'bottom'];
 const numPlayersPerEdge = 3;	
 

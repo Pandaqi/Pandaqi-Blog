@@ -1,4 +1,5 @@
 ---
+draft: true
 title: 'The Magic of Decision Trees'
 date: 2025-06-06 10:26:32
 tags: ["update"]
@@ -64,7 +65,7 @@ As such, I wrote a system that ...
 
 The syntax is also very simple. You start a new node and name it, then list all the options below it, and optionally define styles. I decided to use "=>" arrows to clearly signal when a connection to a new node is defined.
 
-{{< highlight >}}
+```
 Node = some_label
 Text = What do you want?
 Paths =
@@ -72,7 +73,7 @@ Paths =
 * Play birds => label_of_other_new_node
 Style =
 * Color = #FFAAAA
-{{< /highlight >}}
+```
 
 My code reads this, then parses it into JavaScript objects (with all the properties and stuff you wanted) that create---not surprisingly---a tree. Once done, I give the whole tree to a Visualizer function that draws it. For every layer, it calculates how much space it needs, then offsets everything to make sure it's centered and nothing overlaps.
 
