@@ -2,7 +2,7 @@
 title: "Troublesome Trains"
 date: 2025-10-26
 emoji: "🚂"
-thumbnail_media: "troublesome_trains_header.webp"
+thumbnail_media: "troublesome-trains-header.webp"
 ---
 
 Welcome to the devlog for my Naivigation game [Troublesome Trains](https://pandaqi.com/naivigation/visit/troublesome-trains/). 

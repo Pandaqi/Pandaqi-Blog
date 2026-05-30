@@ -2,7 +2,7 @@
 title: "Crashing Cars"
 date: 2025-10-26
 emoji: "🚗"
-thumbnail_media: "crashing_cars_header.webp"
+thumbnail_media: "crashing-cars-header.webp"
 ---
 
 Welcome to the devlog for my Naivigation game [Crashing Cars](https://pandaqi.com/naivigation/visit/crashing-cars/). 

@@ -2,7 +2,7 @@
 title: "Frightening Flights"
 date: 2025-10-26
 emoji: "✈️"
-thumbnail_media: "frightening_flights_header.webp"
+thumbnail_media: "frightening-flights-header.webp"
 ---
 
 Welcome to the devlog for my Naivigation game [Frightening Flights](https://pandaqi.com/naivigation/visit/frightening-flights/). 

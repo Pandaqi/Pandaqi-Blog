@@ -2,7 +2,7 @@
 title: "Swerving Spaceships"
 date: 2025-10-26
 emoji: "🛸"
-thumbnail_media: "swerving_spaceships_header.webp"
+thumbnail_media: "swerving-spaceships-header.webp"
 ---
 
 Welcome to the devlog for my Naivigation game [Swerving Spaceships](https://pandaqi.com/naivigation/visit/swerving-spaceships/). 

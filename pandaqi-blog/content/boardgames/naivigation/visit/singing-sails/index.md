@@ -2,7 +2,7 @@
 title: "Singing Sails"
 date: 2025-10-26
 emoji: "🚢"
-thumbnail_media: "singing_sails_header.webp"
+thumbnail_media: "singing-sails-header.webp"
 ---
 
 Welcome to the devlog for my Naivigation game [Singing Sails](https://pandaqi.com/naivigation/visit/singing-sails/). 
