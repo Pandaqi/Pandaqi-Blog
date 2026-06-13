@@ -1,5 +1,5 @@
 ---
-title: "Good Games Allow Learning"
+title: "Make Systems, Not Games"
 tags: ["thoughts"]
 date: 2026-04-04
 emoji: "💬"
