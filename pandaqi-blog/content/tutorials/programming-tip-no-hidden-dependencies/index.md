@@ -1,6 +1,6 @@
 ---
 title: "Programming Tip: No Hidden Dependencies"
-tags: ["thoughts"]
+tags: ["tutorial"]
 date: 2026-03-03
 emoji: "💬"
 ---
